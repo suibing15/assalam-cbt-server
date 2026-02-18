@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <title>Teacher Portal - Assalam Academy</title>
+  <link rel="stylesheet" href="/public/assets/css/style.css" />
+
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #f1f8ff, #ffffff);
+    margin: 0;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right)
+             env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+
+  /* Header */
+  .school-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #004080;
+    color: #fff;
+    padding: 12px 14px;
+    border-bottom: 3px solid #002850;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  .school-header .left { display:flex; align-items:center; gap:10px; }
+  .school-header img.school-logo { height: 50px; width: auto; margin-right: 8px; }
+  .school-header h1 { font-size: 1.45rem; margin: 0; font-weight: bold; text-align:left; }
+  .school-header p { margin: 0; font-size: 0.85rem; color: #dce6f9; text-align:left; }
+
+  /* right side (term) */
+  .school-header .right { text-align:right; color:#dce6f9; min-width:160px; }
+  .school-header .right #termName { display:block; font-weight:600; color:#fff; }
+
+  /* Main Container */
+  .container {
+    max-width: 980px;
+    margin: 1rem auto;
+    padding: 1.2rem;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+  }
+  h2 { text-align: center; color: #005f8f; margin-bottom: 1rem; }
+
+  /* Cards */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  .card-header {
+    background: #f4f6f9;
+    padding: 12px;
+    font-weight: bold;
+  }
+  .card-body { padding: 12px; }
+
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem 1rem;
+    margin-bottom: .5rem;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+
+  /* Buttons */
+  button {
+    background: #004080;
+    color: white;
+    border: none;
+    padding: .55rem .9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: .95rem;
+    touch-action: manipulation;
+  }
+  button:active { transform: scale(.96); opacity:.9; }
+  button:hover { background: #0059b3; }
+
+  #generateAllBtn {
+    background: #0073e6;
+    font-weight: 600;
+  }
+  #generateAllBtn:hover { background: #005bb5; }
+
+  /* Inputs */
+  input {
+    width: 100%;
+    padding: .45rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: .95rem;
+    touch-action: manipulation;
+  }
+
+  /* Signature Box */
+  #signatureUploadSection {
+    background: #f9fbfd;
+    border: 1px solid #dce6f9;
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 15px;
+    display:none;
+  }
+  #signaturePreview {
+    display:block;
+    margin-top:8px;
+    max-width:210px;
+    border-radius:6px;
+    border:1px solid #ccc;
+  }
+  #signatureStatus {
+    margin-top:5px;
+    font-size:.85rem;
+  }
+
+  /* Mobile Tweaks */
+  @media(max-width:480px){
+    .school-header h1 { font-size: 1.25rem; }
+    .container { padding: 1rem; margin-top: .5rem; }
+    button { font-size:.9rem; padding:.5rem .8rem; }
+    .list-item { padding:.6rem; flex-wrap:wrap; }
+    .list-item button { margin-top:5px; width:100%; }
+    .school-header { flex-direction: column; gap:8px; align-items:flex-start; }
+    .school-header .right { text-align:left; }
+  }
+
+</style>
+</head>
+
+<body>
+
+<header class="school-header">
+  <div class="left">
+    <img src="/public/logo.png" class="school-logo" alt="School logo">
+    <div>
+      <h1 id="schoolName">ASSALAM INTERNATIONAL ACADEMIC SCHOOL GARKO</h1>
+      <p>Teacher Portal</p>
+    </div>
+  </div>
+
+  <!-- Right: Term (Option 2) -->
+  <div class="right">
+    <div id="termName">First Term</div>
+    <div style="font-size:0.85rem;color:#cfe6ff;">Welcome, Teacher</div>
+  </div>
+</header>
+
+<div class="container">
+
+  <h2 id="dashboardTitle">Teacher Portal Dashboard</h2>
+
+  <!-- Login -->
+  <div class="card">
+    <div class="card-header">Login</div>
+    <div class="card-body" id="authSection">
+      <form id="portalAuth">
+        <input name="portalPassword" placeholder="Portal password" required autocomplete="off">
+        <button type="submit">Enter Portal</button>
+      </form>
+    </div>
+  </div>
+
+ <!-- Classes -->
+<div class="card">
+  <div class="card-header">Classes</div>
+  <div class="card-body" id="classesSection" style="display:none;">
+    <div id="classesList"></div>
+
+ <!-- Bulk Report Options -->
+<div id="bulkReportArea" style="margin-top: 15px; text-align: center; display:none;">
+
+  <h3 style="
+    margin-bottom: 12px;
+    color:#004080;
+    font-size: 1.15rem;
+    font-weight:700;
+  ">
+    Bulk Report Generator
+  </h3>
+
+  <div style="
+    background:#f4f8ff;
+    border:1px solid #c9dbf7;
+    padding:15px;
+    border-radius:10px;
+    max-width:550px;
+    margin:0 auto 15px auto;
+    text-align:left;
+    font-size:0.92rem;
+    color:#003060;
+    line-height:1.45;
+  ">
+    
+             <b>Generate Full Class Report (One PDF)</b><br>
+    This produces a single combined PDF containing the reports of 
+    <u>all students</u> in the class, arranged one after another.
+    A final summary page is also attached automatically.
+  </div>
+
+  <!-- BUTTONS SECTION -->
+  <div style="margin-top:10px; display:flex; flex-direction:column; gap:10px; align-items:center;">
+
+    <button id="generateAllBtn" style="
+      ;
+    ">
+      
+    </button>
+
+    <button id="generateMergedBtn" style="
+      width:260px;
+      background:#00802b;
+      font-weight:600;
+    ">
+      Generate Full Class Report (One PDF)
+    </button>
+
+  </div>
+
+  <div id="bulkStatus" style="margin-top:10px; font-size:.9rem; color:#004080;"></div>
+
+  <!-- Success Bar -->
+  <div id="bulkSuccessBar" style="
+    display:none;
+    margin-top:12px;
+    width:100%;
+    max-width:550px;
+    background:#d4edda;
+    border-left:6px solid #28a745;
+    padding:10px;
+    font-size:14px;
+    color:#155724;
+    font-weight:600;
+    border-radius:4px;
+    margin-left:auto;
+    margin-right:auto;
+  ">
+    Bulk operation completed successfully!
+  </div>
+
+</div>
+
+
+  <!-- Students -->
+  <div class="card">
+    <div class="card-header">Students</div>
+    <div class="card-body" id="studentsSection" style="display:none;">
+      <div id="studentsList"></div>
+
+      <div id="signatureUploadSection">
+        <h4>✍️ Upload Your Signature (for this class)</h4>
+        <input type="file" id="teacherSignatureInput" accept="image/png, image/jpeg">
+        <button id="uploadSignatureBtn">Upload Signature</button>
+        <span id="signatureStatus"></span>
+        <img id="signaturePreview" style="display:none;">
+      </div>
+    </div>
+  </div>
+
+  <!-- Report -->
+  <div class="card">
+    <div class="card-header">Report Sheet</div>
+    <div class="card-body" id="reportEdit" style="display:none;">
+      <h3>Edit Report for <span id="studentName"></span></h3>
+      <form id="reportForm">
+        <div id="subjectsArea"></div>
+        <button type="submit" style="margin-top:10px;">Update Report & Generate PDF</button>
+      </form>
+    </div>
+  </div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Create overlay if missing
+  let overlay = document.getElementById("broadcast-overlay");
+  if (!overlay) {
+    overlay = document.createElement("div");
+    overlay.id = "broadcast-overlay";
+
+    // Countdown span
+    const countdownSpan = document.createElement("div");
+    countdownSpan.id = "broadcast-countdown";
+    countdownSpan.style.fontSize = "0.5em";
+    countdownSpan.style.marginTop = "15px";
+    countdownSpan.style.opacity = "0.9";
+    countdownSpan.style.fontWeight = "600";
+    overlay.appendChild(countdownSpan);
+
+    document.body.appendChild(overlay);
+
+    // Styles
+    Object.assign(overlay.style, {
+      position: "fixed",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      width: "85%",
+      maxWidth: "700px",
+      minHeight: "120px",
+      backgroundColor: "rgba(0, 45, 105, 0.95)", // professional dark-blue
+      color: "#ffd700", // golden text
+      display: "none",
+      zIndex: "999999",
+      fontSize: "60px",
+      fontWeight: "900",
+      textAlign: "center",
+      justifyContent: "center",
+      alignItems: "center",
+      padding: "20px",
+      boxSizing: "border-box",
+      textShadow: "0 0 20px #000",
+      borderRadius: "18px",
+      border: "6px solid #ffcc00",
+      wordWrap: "break-word",
+      wordBreak: "break-word",
+      overflowWrap: "break-word",
+      display: "flex",
+      flexDirection: "column",
+      cursor: "not-allowed",
+      userSelect: "none",
+      pointerEvents: "all",
+      animation: "pulseOverlay 1s infinite alternate"
+    });
+
+    // Keyframes & responsive
+    const style = document.createElement("style");
+    style.innerHTML = `
+      @keyframes pulseOverlay {
+        0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+        50% { transform: translate(-50%, -50%) scale(1.05); opacity: 0.9; }
+        100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+      }
+
+      @media(max-width:1024px) { #broadcast-overlay { font-size: 50px; } }
+      @media(max-width:768px)  { #broadcast-overlay { font-size: 40px; } }
+      @media(max-width:480px)  { #broadcast-overlay { font-size: 28px; } }
+      @media(max-width:360px)  { #broadcast-overlay { font-size: 24px; } }
+    `;
+    document.head.appendChild(style);
+  }
+
+  // Prepare sound
+  const broadcastSound = new Audio("/public/sounds/alert.mp3");
+  broadcastSound.preload = "auto";
+
+  async function checkBroadcast() {
+    try {
+      const res = await fetch("/api/broadcast");
+      const data = await res.json();
+      const countdown = document.getElementById("broadcast-countdown");
+
+      if (data.text) {
+        overlay.innerHTML = `<div>${data.text}</div>`;
+        overlay.appendChild(countdown);
+        overlay.style.display = "flex";
+
+        // Dynamically adjust font size for long text
+        const maxCharsPerLine = Math.floor(window.innerWidth / 15);
+        if (data.text.length > maxCharsPerLine) {
+          overlay.style.fontSize = `${Math.max(18, Math.floor(60 * maxCharsPerLine / data.text.length))}px`;
+        } else {
+          overlay.style.fontSize = "60px";
+        }
+
+        document.body.style.pointerEvents = "none";
+        overlay.style.pointerEvents = "all";
+
+        // Play sound
+        broadcastSound.pause();
+        broadcastSound.currentTime = 0;
+        broadcastSound.play().catch(e => console.warn("Audio play blocked:", e));
+
+        // Countdown
+        let remaining = 30;
+        countdown.textContent = `Will disappear in ${remaining}s`;
+
+        const interval = setInterval(() => {
+          remaining--;
+          countdown.textContent = `Will disappear in ${remaining}s`;
+          if (remaining <= 0) {
+            clearInterval(interval);
+            overlay.style.display = "none";
+            document.body.style.pointerEvents = "auto";
+          }
+        }, 1000);
+
+      } else {
+        overlay.style.display = "none";
+        document.body.style.pointerEvents = "auto";
+      }
+
+    } catch (err) {
+      console.error("Broadcast fetch failed:", err);
+    }
+  }
+
+  checkBroadcast();
+  setInterval(checkBroadcast, 2000);
+
+});
+</script>
+
+
+
+<script src="/public/assets/js/teacher.js"></script>
+<footer class="site-footer">
+  © 2025 SUIBING IT SERVICES. All Rights Reserved.
+</footer>
+
+</body>
+</html>

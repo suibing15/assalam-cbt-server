@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <title>Parent Portal - Assalam Academy</title>
+  <link rel="stylesheet" href="/public/assets/css/style.css" />
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg,#e0f7fa,#f1f8ff,#ffffff);
+    min-height: 100vh;
+    color:#333;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right)
+             env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+
+  /* HEADER */
+  .school-header {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:#004080;
+    color:#fff;
+    padding:14px;
+    border-bottom:3px solid #002850;
+    position:sticky;
+    top:0;
+    z-index:50;
+  }
+  .school-header img { height:50px; margin-right:10px; }
+  .school-header h1 { font-size:1.4rem; margin:0; font-weight:700; }
+  .school-header p { margin:0;font-size:.85rem;color:#dce6f9; }
+
+  /* MAIN WRAPPER */
+  .container {
+    max-width:850px;
+    margin:1.2rem auto;
+    padding:1.4rem;
+    background:#fff;
+    border-radius:14px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    animation:fadeIn .8s ease-in-out;
+  }
+  @keyframes fadeIn { from{opacity:0;transform:translateY(15px);} to{opacity:1;transform:translateY(0);} }
+
+  h2 { text-align:center;margin-bottom:1.2rem;color:#005f8f; }
+
+  /* CARDS */
+  .card {
+    background:#fff;
+    border-radius:8px;
+    margin-bottom:15px;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+  }
+  .card-header {
+    background:#f4f6f9;
+    padding:12px;
+    font-weight:600;
+    border-bottom:1px solid #ddd;
+    color:#004080;
+  }
+  .card-body { padding:14px; }
+
+  .list-item {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:.9rem;
+    margin-bottom:.7rem;
+    background:#f9f9f9;
+    border:1px solid #e0e0e0;
+    border-radius:10px;
+    transition:.3s ease;
+  }
+  .list-item:hover {
+    background:#eef9ff;
+    transform:translateY(-3px);
+    box-shadow:0 5px 12px rgba(0,0,0,.1);
+  }
+
+  /* BUTTONS */
+  button.primary {
+    width:100%;
+    padding:.65rem;
+    background:linear-gradient(135deg,#005f8f,#0077b6);
+    color:#fff;
+    font-weight:600;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:1rem;
+    touch-action:manipulation;
+  }
+  button.primary:active { transform:scale(.96);opacity:.9; }
+
+  /* INPUTS */
+  input {
+    width:100%;
+    padding:.65rem;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:1rem;
+    margin-bottom:.8rem;
+    touch-action:manipulation;
+  }
+
+  /* MOBILE */
+  @media(max-width:480px){
+    .school-header img { height:45px; }
+    .school-header h1 { font-size:1.15rem; }
+    .container { padding:1.1rem;margin-top:.7rem; }
+    button.primary,input { font-size:.95rem; }
+  }
+</style>
+</head>
+
+<body>
+
+<header class="school-header">
+  <img src="/public/logo.png" class="school-logo">
+  <div>
+    <h1>ASSALAM INTERNATIONAL ACADEMY GARKO</h1>
+    <p>Parent Portal - Access Child Reports</p>
+  </div>
+</header>
+
+<div class="container">
+  <h2>Parent Portal</h2>
+
+  <!-- Login -->
+  <div class="card" id="authCard">
+    <div class="card-header">Parent Login</div>
+    <div class="card-body">
+      <form id="authFormParent">
+        <input id="portalPassword" placeholder="Parent Access Password" required>
+        <button class="primary" type="submit">Login</button>
+        <div id="authStatus" style="margin-top:10px;font-weight:600;"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Student -->
+  <div class="card" id="studentCard" style="display:none;">
+    <div class="card-header">Enter Student ID</div>
+    <div class="card-body">
+      <input id="studentIdInput" placeholder="Enter Student ID" required>
+      <button class="primary" id="verifyBtn">Verify Student</button>
+      <div id="verifyStatus" style="margin-top:10px;font-weight:600;"></div>
+    </div>
+  </div>
+
+  <!-- Reports -->
+  <div class="card" id="reportArea" style="display:none;">
+    <div class="card-header">Student Reports</div>
+    <div class="card-body" id="reportList"></div>
+  </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Create overlay if missing
+  let overlay = document.getElementById("broadcast-overlay");
+  if (!overlay) {
+    overlay = document.createElement("div");
+    overlay.id = "broadcast-overlay";
+
+    // Countdown span
+    const countdownSpan = document.createElement("div");
+    countdownSpan.id = "broadcast-countdown";
+    countdownSpan.style.fontSize = "0.5em";
+    countdownSpan.style.marginTop = "15px";
+    countdownSpan.style.opacity = "0.9";
+    countdownSpan.style.fontWeight = "600";
+    overlay.appendChild(countdownSpan);
+
+    document.body.appendChild(overlay);
+
+    // Styles
+    Object.assign(overlay.style, {
+      position: "fixed",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      width: "85%",
+      maxWidth: "700px",
+      minHeight: "120px",
+      backgroundColor: "rgba(0, 45, 105, 0.95)", // professional dark-blue
+      color: "#ffd700", // golden text
+      display: "none",
+      zIndex: "999999",
+      fontSize: "60px",
+      fontWeight: "900",
+      textAlign: "center",
+      justifyContent: "center",
+      alignItems: "center",
+      padding: "20px",
+      boxSizing: "border-box",
+      textShadow: "0 0 20px #000",
+      borderRadius: "18px",
+      border: "6px solid #ffcc00",
+      wordWrap: "break-word",
+      wordBreak: "break-word",
+      overflowWrap: "break-word",
+      display: "flex",
+      flexDirection: "column",
+      cursor: "not-allowed",
+      userSelect: "none",
+      pointerEvents: "all",
+      animation: "pulseOverlay 1s infinite alternate"
+    });
+
+    // Keyframes & responsive
+    const style = document.createElement("style");
+    style.innerHTML = `
+      @keyframes pulseOverlay {
+        0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+        50% { transform: translate(-50%, -50%) scale(1.05); opacity: 0.9; }
+        100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+      }
+
+      @media(max-width:1024px) { #broadcast-overlay { font-size: 50px; } }
+      @media(max-width:768px)  { #broadcast-overlay { font-size: 40px; } }
+      @media(max-width:480px)  { #broadcast-overlay { font-size: 28px; } }
+      @media(max-width:360px)  { #broadcast-overlay { font-size: 24px; } }
+    `;
+    document.head.appendChild(style);
+  }
+
+  // Prepare sound
+  const broadcastSound = new Audio("/public/sounds/alert.mp3");
+  broadcastSound.preload = "auto";
+
+  async function checkBroadcast() {
+    try {
+      const res = await fetch("/api/broadcast");
+      const data = await res.json();
+      const countdown = document.getElementById("broadcast-countdown");
+
+      if (data.text) {
+        overlay.innerHTML = `<div>${data.text}</div>`;
+        overlay.appendChild(countdown);
+        overlay.style.display = "flex";
+
+        // Dynamically adjust font size for long text
+        const maxCharsPerLine = Math.floor(window.innerWidth / 15);
+        if (data.text.length > maxCharsPerLine) {
+          overlay.style.fontSize = `${Math.max(18, Math.floor(60 * maxCharsPerLine / data.text.length))}px`;
+        } else {
+          overlay.style.fontSize = "60px";
+        }
+
+        document.body.style.pointerEvents = "none";
+        overlay.style.pointerEvents = "all";
+
+        // Play sound
+        broadcastSound.pause();
+        broadcastSound.currentTime = 0;
+        broadcastSound.play().catch(e => console.warn("Audio play blocked:", e));
+
+        // Countdown
+        let remaining = 30;
+        countdown.textContent = `Will disappear in ${remaining}s`;
+
+        const interval = setInterval(() => {
+          remaining--;
+          countdown.textContent = `Will disappear in ${remaining}s`;
+          if (remaining <= 0) {
+            clearInterval(interval);
+            overlay.style.display = "none";
+            document.body.style.pointerEvents = "auto";
+          }
+        }, 1000);
+
+      } else {
+        overlay.style.display = "none";
+        document.body.style.pointerEvents = "auto";
+      }
+
+    } catch (err) {
+      console.error("Broadcast fetch failed:", err);
+    }
+  }
+
+  checkBroadcast();
+  setInterval(checkBroadcast, 2000);
+
+});
+</script>
+
+
+<script src="/public/assets/js/parent.js"></script>
+<footer class="site-footer">
+  © 2025 SUIBING IT SERVICES. All Rights Reserved.
+</footer>
+
+</body>
+</html>
