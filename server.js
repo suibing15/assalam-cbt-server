@@ -176,7 +176,7 @@ const { generateIDCard } = require("./utils/idCardGenerator");
 const {
   generateClassAttendancePDF,
   generateTeacherAttendancePDF
-} = require("./utils/attendancePdf");
+} = require("./utils/attendancepdf");
 
 /* ======================================================
    ADMIN ACCESS GUARD
@@ -3134,4 +3134,5 @@ for (const name of Object.keys(interfaces)) {
     }
   }
 }
+
 
