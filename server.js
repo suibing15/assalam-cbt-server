@@ -1,4 +1,8 @@
 // server.js
+// Temporary test with ngrok
+const MEGA_URL = process.env.MEGA_URL || "https://5f22-105-113-27-237.ngrok-free.app/api/heartbeat/";
+console.log("Using Mega URL:", MEGA_URL);
+
 global.SYSTEM_LOCKED = false;
 global.SYSTEM_LOCK_REASON = "System locked by administrator.";
 global.ADMIN_DEVICES = new Set();
@@ -3134,5 +3138,6 @@ for (const name of Object.keys(interfaces)) {
     }
   }
 }
+
 
 
