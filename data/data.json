@@ -1,0 +1,4919 @@
+{
+  "meta": {
+    "schoolName": "ASSALAM INTERNATIONAL ACADEMIC SCHOOL GARKO",
+    "term": "SECOND TERM",
+    "session": "2025/2026",
+    "logo": "/uploads/question_1771871127055.jpg",
+    "signaturePrincipal": "/uploads/principal_signature.png",
+    "portalToggles": {
+      "teacherPortal": true,
+      "examPortal": true,
+      "parentPortal": true
+    },
+    "portalPasswords": {
+      "teacherPortal": "cc",
+      "examPortal": "aa",
+      "parentPortal": "suibing18"
+    },
+    "testToggles": {
+      "test1": false,
+      "test2": false,
+      "test3": false,
+      "exam": true
+    }
+  },
+  "admins": [
+    {
+      "username": "admin",
+      "password": "suibing15"
+    }
+  ],
+  "schools": [
+    {
+      "id": "S1",
+      "name": "ASSALAM INTERNATIONAL ACADEMIC SCHOOL GARKO"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "ASLM/PN/01",
+      "name": "Sa'adatu Nasir Yusif",
+      "password": "001",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-01-25"
+    },
+    {
+      "id": "ASLM/JS/01",
+      "name": "Sadiqa Sani Yusif",
+      "password": "002",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-01-25"
+    },
+    {
+      "id": "ASLM/P/01",
+      "name": "Abba Uba Garko",
+      "password": "001",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-01-25"
+    },
+    {
+      "id": "ASL/PN/02",
+      "name": "Hauwa'u Aliyu Muhammad",
+      "password": "002",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-02-19"
+    },
+    {
+      "id": "ASLM/N/01",
+      "name": "Fatima Baffa Nasir",
+      "password": "001",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-02-19"
+    },
+    {
+      "id": "ASLM/N/02",
+      "name": "Hafsat Ja'afar",
+      "password": "002",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-02-19"
+    },
+    {
+      "id": "ASLM/P/02",
+      "name": "Nafisa Lawan Tanko",
+      "password": "002",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-02-19"
+    },
+    {
+      "id": "ASLM/P/03",
+      "name": "Sunusi Abdul-aziz",
+      "password": "003",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-02-19"
+    },
+    {
+      "id": "ASLM/JS/02",
+      "name": "Muhammad D. Zakari",
+      "password": "002",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-02-19"
+    },
+    {
+      "id": "ASLM/JS/03",
+      "name": "Abubakar Ja'afar Yakub",
+      "password": "003",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-02-19"
+    },
+    {
+      "id": "ASLM/PN/03",
+      "name": "Maryam Sunusi",
+      "password": "001",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-02-19"
+    },
+    {
+      "id": "ASLM/PN/04",
+      "name": "Aisha Alasan",
+      "password": "002",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-02-19"
+    },
+    {
+      "id": "ASLM/N/03",
+      "name": "Batula Ahmad",
+      "password": "001",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-02-19"
+    },
+    {
+      "id": "ASLM/N/04",
+      "name": "Aisha A. Kabir",
+      "password": "002",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-02-19"
+    },
+    {
+      "id": "ASLM/P/04",
+      "name": "Zainab Auwalu",
+      "password": "001",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-02-19"
+    },
+    {
+      "id": "ASLM/P/05",
+      "name": "Ummulkhairi Kabir",
+      "password": "002",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-02-19"
+    },
+    {
+      "id": "ASLM/P/06",
+      "name": "Khadija Hashim",
+      "password": "003",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-02-19"
+    },
+    {
+      "id": "ASLM/JS/05",
+      "name": "Anas M. Zainu",
+      "password": "005",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-02-19"
+    },
+    {
+      "id": "ASLM/JS/04",
+      "name": "Suleiman Ibrahim Inuwa",
+      "password": "004",
+      "active": true,
+      "blocked": false,
+      "createdAt": "2026-02-19"
+    }
+  ],
+  "attendance": {
+    "SS1": {
+      "2026-01-25": {
+        "teacherId": "ASLM/PN/01",
+        "timestamp": "2026-01-25T23:03:42.331Z",
+        "students": {
+          "11": "present",
+          "342": "present",
+          "343": "present",
+          "2002": "present",
+          "200A": "present",
+          "121SS": "present"
+        }
+      },
+      "2026-01-26": {
+        "teacherId": "ASLM/PN/01",
+        "timestamp": "2026-01-26T00:18:24.172Z",
+        "students": {
+          "11": "present",
+          "342": "present",
+          "343": "present",
+          "2002": "present",
+          "200A": "present",
+          "121SS": "present"
+        }
+      },
+      "2026-02-23": {
+        "teacherId": "ASLM/P/01",
+        "timestamp": "2026-02-23T19:39:21.161Z",
+        "students": {}
+      }
+    },
+    "JS1": {
+      "2026-01-27": {
+        "teacherId": "ASLM/P/01",
+        "timestamp": "2026-01-27T21:51:59.363Z",
+        "students": {
+          "123": "present",
+          "124": "present",
+          "125": "present",
+          "126": "present",
+          "127": "present",
+          "128": "present",
+          "129": "present",
+          "130": "present",
+          "131": "present",
+          "132": "present",
+          "133": "present",
+          "134": "present",
+          "135": "present",
+          "2016": "present",
+          "STU001": "present",
+          "STU002": "present"
+        }
+      }
+    },
+    "NB": {
+      "2026-01-27": {
+        "teacherId": "ASLM/P/01",
+        "timestamp": "2026-01-27T23:01:39.491Z",
+        "students": {
+          "200D": "present"
+        }
+      }
+    },
+    "PNA": {
+      "2026-01-27": {
+        "teacherId": "ASLM/P/01",
+        "timestamp": "2026-01-27T23:04:50.221Z",
+        "students": {
+          "200D": "present"
+        }
+      }
+    },
+    "P1": {
+      "2026-02-23": {
+        "teacherId": "ASLM/P/01",
+        "timestamp": "2026-02-23T20:00:08.795Z",
+        "students": {
+          "11": "present",
+          "342": "present",
+          "343": "present",
+          "2002": "present",
+          "200A": "present",
+          "121SS": "present"
+        }
+      }
+    },
+    "P2": {
+      "2026-02-23": {
+        "teacherId": "ASLM/P/01",
+        "timestamp": "2026-02-23T19:41:06.781Z",
+        "students": {}
+      }
+    },
+    "P5": {
+      "2026-02-23": {
+        "teacherId": "ASLM/P/01",
+        "timestamp": "2026-02-23T19:47:14.486Z",
+        "students": {
+          "123": "absent",
+          "124": "absent",
+          "125": "absent",
+          "126": "absent",
+          "127": "absent",
+          "128": "absent",
+          "129": "absent",
+          "130": "absent",
+          "131": "absent",
+          "132": "absent",
+          "133": "absent",
+          "134": "absent",
+          "135": "absent",
+          "2016": "absent",
+          "STU001": "absent",
+          "STU002": "absent"
+        }
+      }
+    },
+    "P3": {
+      "2026-02-23": {
+        "teacherId": "ASLM/P/01",
+        "timestamp": "2026-02-23T19:47:55.480Z",
+        "students": {}
+      }
+    },
+    "JS3": {
+      "2026-02-23": {
+        "teacherId": "ASLM/P/01",
+        "timestamp": "2026-02-23T19:48:51.171Z",
+        "students": {
+          "123": "absent",
+          "124": "absent",
+          "125": "absent",
+          "126": "absent",
+          "127": "absent",
+          "128": "absent",
+          "129": "absent",
+          "130": "absent",
+          "131": "absent",
+          "132": "absent",
+          "133": "absent",
+          "134": "absent",
+          "135": "absent",
+          "2016": "absent",
+          "STU001": "absent",
+          "STU002": "absent"
+        }
+      }
+    }
+  },
+  "classes": [
+    {
+      "id": "P5",
+      "name": "Primary 5",
+      "password": "001",
+      "subjects": []
+    },
+    {
+      "id": "PNA",
+      "name": "Pre-nursery A",
+      "password": "001",
+      "subjects": [
+        "TST",
+        "TST2"
+      ]
+    },
+    {
+      "id": "PNB",
+      "name": "Pre-nursery B",
+      "password": "002",
+      "subjects": [
+        "TST",
+        "TST2"
+      ]
+    },
+    {
+      "id": "NA",
+      "name": "Nursery A",
+      "password": "003",
+      "subjects": [
+        "TST",
+        "TST2"
+      ]
+    },
+    {
+      "id": "NB",
+      "name": "Nursery B",
+      "password": "004",
+      "subjects": [
+        "TST",
+        "TST2"
+      ]
+    },
+    {
+      "id": "P1",
+      "name": "Primary 1",
+      "password": "005",
+      "subjects": [
+        "TST",
+        "TST2"
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "Primary 2",
+      "password": "006",
+      "subjects": [
+        "TST",
+        "TST2"
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "Primary 3",
+      "password": "007",
+      "subjects": [
+        "TST",
+        "TST2"
+      ]
+    },
+    {
+      "id": "JS1",
+      "name": "JSS1",
+      "password": "008",
+      "subjects": [
+        "TST"
+      ]
+    },
+    {
+      "id": "JS2",
+      "name": "JSS2",
+      "password": "009"
+    },
+    {
+      "id": "KGT",
+      "name": "Kindergaten",
+      "password": "000",
+      "subjects": [
+        "TST",
+        "TST2"
+      ]
+    }
+  ],
+  "students": [
+    {
+      "id": "0001A",
+      "name": "Musa Haruna",
+      "classId": "P1",
+      "password": "01",
+      "photo": null
+    },
+    {
+      "id": "0002A",
+      "name": "Auwalu A. Musa",
+      "classId": "P1",
+      "password": "02",
+      "photo": null
+    },
+    {
+      "id": "0003A",
+      "name": "Rabi'u A Musa",
+      "classId": "P1",
+      "password": "03",
+      "photo": null
+    },
+    {
+      "id": "0004A",
+      "name": "Mahida A. Musa",
+      "classId": "P1",
+      "password": "04",
+      "photo": null
+    },
+    {
+      "id": "0005A",
+      "name": "Rabi'u Ahmad",
+      "classId": "P1",
+      "password": "05",
+      "photo": null
+    },
+    {
+      "id": "0006A",
+      "name": "Abdullahi Abubakar Abdu",
+      "classId": "P1",
+      "password": "06",
+      "photo": null
+    },
+    {
+      "id": "0007A",
+      "name": "Usman Hassan Muhammad",
+      "classId": "P1",
+      "password": "07",
+      "photo": null
+    },
+    {
+      "id": "0008A",
+      "name": "Safiyanu Abdurrashid",
+      "classId": "P1",
+      "password": "08",
+      "photo": null
+    },
+    {
+      "id": "0009A",
+      "name": "Musa Ali",
+      "classId": "P1",
+      "password": "09",
+      "photo": null
+    },
+    {
+      "id": "0010A",
+      "name": "Naziru Kabiru",
+      "classId": "P1",
+      "password": "10",
+      "photo": null
+    },
+    {
+      "id": "0011A",
+      "name": "Abdulhadi Habibu",
+      "classId": "P1",
+      "password": "11",
+      "photo": null
+    },
+    {
+      "id": "0013A",
+      "name": "Ummusalama Musa Sabo",
+      "classId": "P1",
+      "password": "13",
+      "photo": null
+    },
+    {
+      "id": "0012A",
+      "name": "Nafisat Mustapha",
+      "classId": "P1",
+      "password": "12",
+      "photo": null
+    },
+    {
+      "id": "0014A",
+      "name": "Aisha Suleman",
+      "classId": "P1",
+      "password": "14",
+      "photo": null
+    },
+    {
+      "id": "0015A",
+      "name": "Khadija Rabi'u Ibrahim",
+      "classId": "P1",
+      "password": "15",
+      "photo": null
+    },
+    {
+      "id": "0016A",
+      "name": "Jamila Kabiru",
+      "classId": "P1",
+      "password": "16",
+      "photo": null
+    },
+    {
+      "id": "0017A",
+      "name": "Sulaiman Dauda",
+      "classId": "P1",
+      "password": "17",
+      "photo": null
+    },
+    {
+      "id": "0018A",
+      "name": "Yusuf Muhammad",
+      "classId": "P1",
+      "password": "18",
+      "photo": null
+    },
+    {
+      "id": "0019A",
+      "name": "Mustapha Lawal",
+      "classId": "P1",
+      "password": "19",
+      "photo": null
+    },
+    {
+      "id": "0020A",
+      "name": "Muhammad Abdullahi",
+      "classId": "PNA",
+      "password": "01",
+      "photo": null
+    },
+    {
+      "id": "0021A",
+      "name": "Abubakar Isah",
+      "classId": "PNA",
+      "password": "02",
+      "photo": null
+    },
+    {
+      "id": "0022A",
+      "name": "Usaini Yusif Usaini",
+      "classId": "PNA",
+      "password": "03",
+      "photo": null
+    },
+    {
+      "id": "0292A",
+      "name": "Yusif Abubakar",
+      "classId": "PNA",
+      "password": "04",
+      "photo": null
+    },
+    {
+      "id": "0023A",
+      "name": "Abdullahi Abdulbari Abdu",
+      "classId": "PNA",
+      "password": "05",
+      "photo": null
+    },
+    {
+      "id": "0024A",
+      "name": "Abdurrahman Sunusi Abdulaziz",
+      "classId": "PNA",
+      "password": "06",
+      "photo": null
+    },
+    {
+      "id": "0025A",
+      "name": "Abdurrahman Suleman",
+      "classId": "PNA",
+      "password": "07",
+      "photo": null
+    },
+    {
+      "id": "0026A",
+      "name": "Lawan Yahya Sale",
+      "classId": "PNA",
+      "password": "08",
+      "photo": null
+    },
+    {
+      "id": "0027A",
+      "name": "Almustapha Anas Suleman",
+      "classId": "PNA",
+      "password": "09",
+      "photo": null
+    },
+    {
+      "id": "0028A",
+      "name": "Usman Sule Tanko",
+      "classId": "PNA",
+      "password": "10",
+      "photo": null
+    },
+    {
+      "id": "0029A",
+      "name": "Muhammad Sadisu",
+      "classId": "PNA",
+      "password": "11",
+      "photo": null
+    },
+    {
+      "id": "0030A",
+      "name": "Abdussalam Murtala",
+      "classId": "PNA",
+      "password": "12",
+      "photo": null
+    },
+    {
+      "id": "0031A",
+      "name": "Bilal Ibrahim",
+      "classId": "PNA",
+      "password": "13",
+      "photo": null
+    },
+    {
+      "id": "0032A",
+      "name": "Ibrahim Salisu",
+      "classId": "PNA",
+      "password": "14",
+      "photo": null
+    },
+    {
+      "id": "0033A",
+      "name": "Umar Sani Sabo",
+      "classId": "PNA",
+      "password": "15",
+      "photo": null
+    },
+    {
+      "id": "0034A",
+      "name": "Usman Dayyab",
+      "classId": "PNA",
+      "password": "16",
+      "photo": null
+    },
+    {
+      "id": "0035A",
+      "name": "Jafar Garba",
+      "classId": "PNA",
+      "password": "17",
+      "photo": null
+    },
+    {
+      "id": "0036A",
+      "name": "Musa Hassan",
+      "classId": "PNA",
+      "password": "18",
+      "photo": null
+    },
+    {
+      "id": "0037A",
+      "name": "Abubakar Adam",
+      "classId": "PNA",
+      "password": "19",
+      "photo": null
+    },
+    {
+      "id": "0038A",
+      "name": "Isah Usaini",
+      "classId": "PNA",
+      "password": "20",
+      "photo": null
+    },
+    {
+      "id": "0039A",
+      "name": "Nasiba Abdullahi",
+      "classId": "PNA",
+      "password": "21",
+      "photo": null
+    },
+    {
+      "id": "0040A",
+      "name": "Ummukulsum Sani",
+      "classId": "PNA",
+      "password": "22",
+      "photo": null
+    },
+    {
+      "id": "0041A",
+      "name": "Fatima Khamis Abbas",
+      "classId": "PNA",
+      "password": "23",
+      "photo": null
+    },
+    {
+      "id": "0042A",
+      "name": "Fatima Sabo",
+      "classId": "PNA",
+      "password": "24",
+      "photo": null
+    },
+    {
+      "id": "0043A",
+      "name": "Maryam Alfa",
+      "classId": "PNA",
+      "password": "25",
+      "photo": null
+    },
+    {
+      "id": "0044A",
+      "name": "Aisha Garba",
+      "classId": "PNA",
+      "password": "26",
+      "photo": null
+    },
+    {
+      "id": "0045A",
+      "name": "Zuwaira Auwalu",
+      "classId": "PNA",
+      "password": "27",
+      "photo": null
+    },
+    {
+      "id": "0046A",
+      "name": "Ibrahim Mustapha",
+      "classId": "PNA",
+      "password": "28",
+      "photo": null
+    },
+    {
+      "id": "0047A",
+      "name": "Safiyya Ali",
+      "classId": "PNA",
+      "password": "29",
+      "photo": null
+    },
+    {
+      "id": "0048A",
+      "name": "Rabi'atu Hassan",
+      "classId": "PNA",
+      "password": "30",
+      "photo": null
+    },
+    {
+      "id": "0139A",
+      "name": "Khadija Sani Abdu",
+      "classId": "PNA",
+      "password": "40",
+      "photo": null
+    },
+    {
+      "id": "0135A",
+      "name": "Bilkisu Idris",
+      "classId": "PNA",
+      "password": "44",
+      "photo": null
+    },
+    {
+      "id": "0136A",
+      "name": "Ummulkhairi Auwalu",
+      "classId": "PNA",
+      "password": "45",
+      "photo": null
+    },
+    {
+      "id": "0137A",
+      "name": "Salama Ali",
+      "classId": "PNA",
+      "password": "46",
+      "photo": null
+    },
+    {
+      "id": "0140A",
+      "name": "Abduljalal Sani",
+      "classId": "PNB",
+      "password": "01",
+      "photo": null
+    },
+    {
+      "id": "0141A",
+      "name": "Anas Sani",
+      "classId": "PNB",
+      "password": "02",
+      "photo": null
+    },
+    {
+      "id": "0142A",
+      "name": "Auwalu Sabo Umar",
+      "classId": "PNB",
+      "password": "03",
+      "photo": null
+    },
+    {
+      "id": "0143A",
+      "name": "Auwalu Garba Maisalati",
+      "classId": "PNB",
+      "password": "04",
+      "photo": null
+    },
+    {
+      "id": "0144A",
+      "name": "Ahmad Salihu Ahmad",
+      "classId": "PNB",
+      "password": "05",
+      "photo": null
+    },
+    {
+      "id": "0145A",
+      "name": "Abubakar Abdulkadir Zakariyya",
+      "classId": "PNB",
+      "password": "06",
+      "photo": null
+    },
+    {
+      "id": "0146A",
+      "name": "Aliyu Abdullahi Aliyu",
+      "classId": "PNB",
+      "password": "07",
+      "photo": null
+    },
+    {
+      "id": "0147A",
+      "name": "Auwal Abubakar Saleh",
+      "classId": "PNB",
+      "password": "08",
+      "photo": null
+    },
+    {
+      "id": "0148A",
+      "name": "Auwalu Abdurrahman",
+      "classId": "PNB",
+      "password": "09",
+      "photo": null
+    },
+    {
+      "id": "0149A",
+      "name": "Dahiru Baba Gali",
+      "classId": "PNB",
+      "password": "10",
+      "photo": null
+    },
+    {
+      "id": "0150A",
+      "name": "Ghali Baba Ghali",
+      "classId": "PNB",
+      "password": "11",
+      "photo": null
+    },
+    {
+      "id": "0151A",
+      "name": "Ibrahim Salisu",
+      "classId": "PNB",
+      "password": "12",
+      "photo": null
+    },
+    {
+      "id": "0152A",
+      "name": "Musaddiq Kabiru",
+      "classId": "PNB",
+      "password": "13",
+      "photo": null
+    },
+    {
+      "id": "0153A",
+      "name": "Yusif Kabiru",
+      "classId": "PNB",
+      "password": "14",
+      "photo": null
+    },
+    {
+      "id": "0154A",
+      "name": "Musa Auwalu",
+      "classId": "PNB",
+      "password": "15",
+      "photo": null
+    },
+    {
+      "id": "0155A",
+      "name": "Usman Ibrahim Sani",
+      "classId": "PNB",
+      "password": "16",
+      "photo": null
+    },
+    {
+      "id": "0156A",
+      "name": "Adam Umar Ibrahim",
+      "classId": "PNB",
+      "password": "17",
+      "photo": null
+    },
+    {
+      "id": "0157A",
+      "name": "Yahya Abdullahi Aliyu",
+      "classId": "PNB",
+      "password": "18",
+      "photo": null
+    },
+    {
+      "id": "0158A",
+      "name": "Amina Auwalu Danladi",
+      "classId": "PNB",
+      "password": "19",
+      "photo": null
+    },
+    {
+      "id": "0159A",
+      "name": "Aisha Yahya Saleh",
+      "classId": "PNB",
+      "password": "20",
+      "photo": null
+    },
+    {
+      "id": "0160A",
+      "name": "Amina Abbas Ahmad",
+      "classId": "PNB",
+      "password": "21",
+      "photo": null
+    },
+    {
+      "id": "0161A",
+      "name": "Hauwa'u Lawan",
+      "classId": "PNB",
+      "password": "22",
+      "photo": null
+    },
+    {
+      "id": "0162A",
+      "name": "Hafsa Mustapha Adam",
+      "classId": "PNB",
+      "password": "23",
+      "photo": null
+    },
+    {
+      "id": "0163A",
+      "name": "Hafsa Sani",
+      "classId": "PNB",
+      "password": "24",
+      "photo": null
+    },
+    {
+      "id": "0164A",
+      "name": "Khadija Anas Wakili",
+      "classId": "PNB",
+      "password": "25",
+      "photo": null
+    },
+    {
+      "id": "0165A",
+      "name": "Khadija Saidu",
+      "classId": "PNB",
+      "password": "26",
+      "photo": null
+    },
+    {
+      "id": "0166A",
+      "name": "Maryam Abubakar Usman",
+      "classId": "PNB",
+      "password": "27",
+      "photo": null
+    },
+    {
+      "id": "0167A",
+      "name": "Safiyya M. Dayyab",
+      "classId": "PNB",
+      "password": "28",
+      "photo": null
+    },
+    {
+      "id": "0168A",
+      "name": "Zainab Mustapha",
+      "classId": "PNB",
+      "password": "29",
+      "photo": null
+    },
+    {
+      "id": "0169A",
+      "name": "Maryam Ahamd Sulaiman",
+      "classId": "PNB",
+      "password": "30",
+      "photo": null
+    },
+    {
+      "id": "0170A",
+      "name": "Maryam Sunusi",
+      "classId": "PNB",
+      "password": "31",
+      "photo": null
+    },
+    {
+      "id": "0171A",
+      "name": "Abubakar Safiyanu",
+      "classId": "PNB",
+      "password": "32",
+      "photo": null
+    },
+    {
+      "id": "0172A",
+      "name": "Suleman Sunusi",
+      "classId": "PNB",
+      "password": "33",
+      "photo": null
+    },
+    {
+      "id": "0173A",
+      "name": "Sani Aminu",
+      "classId": "PNB",
+      "password": "34",
+      "photo": null
+    },
+    {
+      "id": "0174A",
+      "name": "Abdullahi Mustapha Salisu",
+      "classId": "PNB",
+      "password": "35",
+      "photo": null
+    },
+    {
+      "id": "0190A",
+      "name": "Aminatu Garba Mukhtar",
+      "classId": "P3",
+      "password": "01",
+      "photo": null
+    },
+    {
+      "id": "0191A",
+      "name": "Aisha Abubakar Idris",
+      "classId": "P3",
+      "password": "02",
+      "photo": null
+    },
+    {
+      "id": "0192A",
+      "name": "Aisha Sani",
+      "classId": "P3",
+      "password": "03",
+      "photo": null
+    },
+    {
+      "id": "0193A",
+      "name": "Abdurrahman Mustapha",
+      "classId": "P3",
+      "password": "04",
+      "photo": null
+    },
+    {
+      "id": "0194A",
+      "name": "Abdurrahman Rabiu",
+      "classId": "P3",
+      "password": "05",
+      "photo": null
+    },
+    {
+      "id": "0195A",
+      "name": "Abdullahi Rabiu",
+      "classId": "P3",
+      "password": "06",
+      "photo": null
+    },
+    {
+      "id": "0196A",
+      "name": "Aliyu Abdulhadi",
+      "classId": "P3",
+      "password": "07",
+      "photo": null
+    },
+    {
+      "id": "0197A",
+      "name": "Bilyamunu Abdulhamid",
+      "classId": "P3",
+      "password": "08",
+      "photo": null
+    },
+    {
+      "id": "0198A",
+      "name": "Khadija Abdulkadir",
+      "classId": "P3",
+      "password": "09",
+      "photo": null
+    },
+    {
+      "id": "0199A",
+      "name": "Khalid Kabiru",
+      "classId": "P3",
+      "password": "10",
+      "photo": null
+    },
+    {
+      "id": "0200A",
+      "name": "Dayyabu Auwalu",
+      "classId": "P3",
+      "password": "11",
+      "photo": null
+    },
+    {
+      "id": "0201A",
+      "name": "Mariya Abubakar Idris",
+      "classId": "P3",
+      "password": "12",
+      "photo": null
+    },
+    {
+      "id": "0202A",
+      "name": "Maimuna Abdulkadir",
+      "classId": "P3",
+      "password": "13",
+      "photo": null
+    },
+    {
+      "id": "0203A",
+      "name": "Naja'atu Mukhtar",
+      "classId": "P3",
+      "password": "14",
+      "photo": null
+    },
+    {
+      "id": "0204A",
+      "name": "Umar Adamu",
+      "classId": "P3",
+      "password": "15",
+      "photo": null
+    },
+    {
+      "id": "0205A",
+      "name": "Hannatu Usman Dankanawa",
+      "classId": "P3",
+      "password": "16",
+      "photo": null
+    },
+    {
+      "id": "0206A",
+      "name": "Zabba'u Musa",
+      "classId": "P3",
+      "password": "17",
+      "photo": null
+    },
+    {
+      "id": "0207A",
+      "name": "Ahmad Iliya",
+      "classId": "P3",
+      "password": "18",
+      "photo": null
+    },
+    {
+      "id": "0208A",
+      "name": "Abdullahi Shuaibu",
+      "classId": "P3",
+      "password": "19",
+      "photo": null
+    },
+    {
+      "id": "0209A",
+      "name": "Sadiya Auwalu Abba",
+      "classId": "P3",
+      "password": "20",
+      "photo": null
+    },
+    {
+      "id": "0210A",
+      "name": "Rabiatu Abubakar Usman",
+      "classId": "P3",
+      "password": "21",
+      "photo": null
+    },
+    {
+      "id": "0211A",
+      "name": "Usman Nura Shehu",
+      "classId": "P3",
+      "password": "22",
+      "photo": null
+    },
+    {
+      "id": "0212A",
+      "name": "Maryam Musa",
+      "classId": "P3",
+      "password": "23",
+      "photo": null
+    },
+    {
+      "id": "0049",
+      "name": "Maimuna Ibrahim",
+      "classId": "PNA",
+      "password": "34",
+      "photo": null
+    },
+    {
+      "id": "0050A",
+      "name": "Zainab Ibrahim",
+      "classId": "KGT",
+      "password": "01",
+      "photo": null
+    },
+    {
+      "id": "0051A",
+      "name": "Habiba Ahmad",
+      "classId": "KGT",
+      "password": "02",
+      "photo": null
+    },
+    {
+      "id": "0052A",
+      "name": "Na'ima Ado",
+      "classId": "KGT",
+      "password": "03",
+      "photo": null
+    },
+    {
+      "id": "0053A",
+      "name": "Fatima Habibu",
+      "classId": "KGT",
+      "password": "04",
+      "photo": null
+    },
+    {
+      "id": "0054A",
+      "name": "Aisha Musa Sabo",
+      "classId": "KGT",
+      "password": "05",
+      "photo": null
+    },
+    {
+      "id": "0055A",
+      "name": "Khadija Inuwa",
+      "classId": "KGT",
+      "password": "06",
+      "photo": null
+    },
+    {
+      "id": "0056A",
+      "name": "Khadija Idris Nuhu",
+      "classId": "KGT",
+      "password": "07",
+      "photo": null
+    },
+    {
+      "id": "0057A",
+      "name": "Fatima Habibu Musa",
+      "classId": "KGT",
+      "password": "08",
+      "photo": null
+    },
+    {
+      "id": "0131A",
+      "name": "Abubakar Mukhtar",
+      "classId": "KGT",
+      "password": "09",
+      "photo": null
+    },
+    {
+      "id": "0132A",
+      "name": "Nasir Hassan Muhammad",
+      "classId": "KGT",
+      "password": "10",
+      "photo": null
+    },
+    {
+      "id": "0133A",
+      "name": "Affan Abdurrazaq",
+      "classId": "KGT",
+      "password": "11",
+      "photo": null
+    },
+    {
+      "id": "0175A",
+      "name": "Rabiu Mukhtar",
+      "classId": "KGT",
+      "password": "12",
+      "photo": null
+    },
+    {
+      "id": "0176A",
+      "name": "Naziru Nura",
+      "classId": "KGT",
+      "password": "13",
+      "photo": null
+    },
+    {
+      "id": "0177A",
+      "name": "Hafsa Abdurra'uf",
+      "classId": "KGT",
+      "password": "14",
+      "photo": null
+    },
+    {
+      "id": "0178A",
+      "name": "Hajara Saleh Ali",
+      "classId": "KGT",
+      "password": "15",
+      "photo": null
+    },
+    {
+      "id": "0179A",
+      "name": "Fatima Rabiu",
+      "classId": "KGT",
+      "password": "16",
+      "photo": null
+    },
+    {
+      "id": "0180A",
+      "name": "Khadija Rabiu",
+      "classId": "KGT",
+      "password": "17",
+      "photo": null
+    },
+    {
+      "id": "0181A",
+      "name": "Amina Abubakar Abdu",
+      "classId": "KGT",
+      "password": "18",
+      "photo": null
+    },
+    {
+      "id": "0182A",
+      "name": "Halimatu Aminu Ibrahim",
+      "classId": "KGT",
+      "password": "19",
+      "photo": null
+    },
+    {
+      "id": "0183A",
+      "name": "Aliyu Sale Ali",
+      "classId": "KGT",
+      "password": "20",
+      "photo": null
+    },
+    {
+      "id": "0184A",
+      "name": "Suleman Abba",
+      "classId": "KGT",
+      "password": "21",
+      "photo": null
+    },
+    {
+      "id": "0185A",
+      "name": "Muhsin M. Ibrahim",
+      "classId": "KGT",
+      "password": "22",
+      "photo": null
+    },
+    {
+      "id": "0186A",
+      "name": "Kamal Idris",
+      "classId": "KGT",
+      "password": "23",
+      "photo": null
+    },
+    {
+      "id": "0187A",
+      "name": "Mustapha Ibrahim",
+      "classId": "KGT",
+      "password": "24",
+      "photo": null
+    },
+    {
+      "id": "0188A",
+      "name": "Fatima Zakariyya Ibrahim",
+      "classId": "KGT",
+      "password": "25",
+      "photo": null
+    },
+    {
+      "id": "0189A",
+      "name": "Maryam Rabiu",
+      "classId": "KGT",
+      "password": "26",
+      "photo": null
+    },
+    {
+      "id": "0058A",
+      "name": "Abubakar Salisu",
+      "classId": "P2",
+      "password": "01",
+      "photo": null
+    },
+    {
+      "id": "0059A",
+      "name": "Abubakar Shuaibu",
+      "classId": "P2",
+      "password": "02",
+      "photo": null
+    },
+    {
+      "id": "0060A",
+      "name": "Umar Lawan",
+      "classId": "P2",
+      "password": "03",
+      "photo": null
+    },
+    {
+      "id": "0061A",
+      "name": "Sunusi  Sulaiman  Inuwa",
+      "classId": "P2",
+      "password": "04",
+      "photo": null
+    },
+    {
+      "id": "0062A",
+      "name": "Adamu Abdullahi",
+      "classId": "P2",
+      "password": "05",
+      "photo": null
+    },
+    {
+      "id": "0063A",
+      "name": "Karibullahi Mansur",
+      "classId": "P2",
+      "password": "06",
+      "photo": null
+    },
+    {
+      "id": "0064A",
+      "name": "Munzali Nasiru",
+      "classId": "P2",
+      "password": "07",
+      "photo": null
+    },
+    {
+      "id": "0065A",
+      "name": "Hamza Nura",
+      "classId": "P2",
+      "password": "08",
+      "photo": null
+    },
+    {
+      "id": "0066A",
+      "name": "Usman Mustapha",
+      "classId": "P2",
+      "password": "09",
+      "photo": null
+    },
+    {
+      "id": "0067A",
+      "name": "Alhassan Basiru Abdullahi",
+      "classId": "P2",
+      "password": "10",
+      "photo": null
+    },
+    {
+      "id": "0068A",
+      "name": "Umar Isah",
+      "classId": "P2",
+      "password": "11",
+      "photo": null
+    },
+    {
+      "id": "0069A",
+      "name": "Umar Abdullahi",
+      "classId": "P2",
+      "password": "12",
+      "photo": null
+    },
+    {
+      "id": "0070A",
+      "name": "Abdullahi Ibrahim",
+      "classId": "P2",
+      "password": "13",
+      "photo": null
+    },
+    {
+      "id": "0071A",
+      "name": "Usman Ibrahim",
+      "classId": "P2",
+      "password": "14",
+      "photo": null
+    },
+    {
+      "id": "0072A",
+      "name": "Umar Falalu Ahmad",
+      "classId": "P2",
+      "password": "15",
+      "photo": null
+    },
+    {
+      "id": "0073A",
+      "name": "Maryam Abdullahi",
+      "classId": "P2",
+      "password": "16",
+      "photo": null
+    },
+    {
+      "id": "0074A",
+      "name": "Fatima Nasiru Abdullahi",
+      "classId": "P2",
+      "password": "17",
+      "photo": null
+    },
+    {
+      "id": "0075A",
+      "name": "Rabiatu Abdulhadi",
+      "classId": "P2",
+      "password": "18",
+      "photo": null
+    },
+    {
+      "id": "0076A",
+      "name": "Bilkisu Abubakar",
+      "classId": "P2",
+      "password": "19",
+      "photo": null
+    },
+    {
+      "id": "0077A",
+      "name": "Hassana Mustapha",
+      "classId": "P2",
+      "password": "20",
+      "photo": null
+    },
+    {
+      "id": "0078A",
+      "name": "Aisha Ado",
+      "classId": "P2",
+      "password": "21",
+      "photo": null
+    },
+    {
+      "id": "0079A",
+      "name": "Zainab Suleman Abubakar",
+      "classId": "P2",
+      "password": "22",
+      "photo": null
+    },
+    {
+      "id": "0080A",
+      "name": "Safiyya Zakarai",
+      "classId": "P2",
+      "password": "23",
+      "photo": null
+    },
+    {
+      "id": "0081A",
+      "name": "Amira Musa Sabo",
+      "classId": "P2",
+      "password": "24",
+      "photo": null
+    },
+    {
+      "id": "0082A",
+      "name": "Halimatu Musa",
+      "classId": "P2",
+      "password": "25",
+      "photo": null
+    },
+    {
+      "id": "0083A",
+      "name": "Rukayya Rabiu",
+      "classId": "P2",
+      "password": "26",
+      "photo": null
+    },
+    {
+      "id": "0084A",
+      "name": "Maimuna Shuaibu",
+      "classId": "P2",
+      "password": "27",
+      "photo": null
+    },
+    {
+      "id": "0085A",
+      "name": "Asma'u Shuaibu",
+      "classId": "P2",
+      "password": "28",
+      "photo": null
+    },
+    {
+      "id": "0086A",
+      "name": "Hafsat Aminu",
+      "classId": "P2",
+      "password": "29",
+      "photo": null
+    },
+    {
+      "id": "0087A",
+      "name": "Abdullahi Kabiru",
+      "classId": "P2",
+      "password": "30",
+      "photo": null
+    },
+    {
+      "id": "0121A",
+      "name": "Anas Shuaibu",
+      "classId": "P2",
+      "password": "31",
+      "photo": null
+    },
+    {
+      "id": "0122A",
+      "name": "Umar Mustapha Adam",
+      "classId": "P2",
+      "password": "32",
+      "photo": null
+    },
+    {
+      "id": "0123A",
+      "name": "Alhassan Ahmad",
+      "classId": "P2",
+      "password": "33",
+      "photo": null
+    },
+    {
+      "id": "0124A",
+      "name": "Abba Ismail",
+      "classId": "P2",
+      "password": "34",
+      "photo": null
+    },
+    {
+      "id": "0125A",
+      "name": "Sharifa Abdurrazaq",
+      "classId": "P2",
+      "password": "35",
+      "photo": null
+    },
+    {
+      "id": "0126A",
+      "name": "Idris Hassan Idris",
+      "classId": "P2",
+      "password": "36",
+      "photo": null
+    },
+    {
+      "id": "0120A",
+      "name": "Abdussamad Ashiru",
+      "classId": "P2",
+      "password": "37",
+      "photo": null
+    },
+    {
+      "id": "0088A",
+      "name": "Ahmad Hassan ",
+      "classId": "NB",
+      "password": "01",
+      "photo": null
+    },
+    {
+      "id": "0089A",
+      "name": "Almustapah Nura Inuwa",
+      "classId": "NB",
+      "password": "02",
+      "photo": null
+    },
+    {
+      "id": "0090A",
+      "name": "Aminu Anas Ahmad",
+      "classId": "NB",
+      "password": "03",
+      "photo": null
+    },
+    {
+      "id": "0091A",
+      "name": "Adam Yahya Adam",
+      "classId": "NB",
+      "password": "04",
+      "photo": null
+    },
+    {
+      "id": "0092A",
+      "name": "Buhari Kabiru",
+      "classId": "NB",
+      "password": "05",
+      "photo": null
+    },
+    {
+      "id": "0093A",
+      "name": "Idris Kabiru",
+      "classId": "NB",
+      "password": "06",
+      "photo": null
+    },
+    {
+      "id": "0094A",
+      "name": "Mubasshir Nura",
+      "classId": "NB",
+      "password": "07",
+      "photo": null
+    },
+    {
+      "id": "0095A",
+      "name": "Muhammad Auwal Abba",
+      "classId": "NB",
+      "password": "08",
+      "photo": null
+    },
+    {
+      "id": "0096A",
+      "name": "Saleh Yahya Saleh",
+      "classId": "NB",
+      "password": "09",
+      "photo": null
+    },
+    {
+      "id": "0097A",
+      "name": "Rabiu Mukhtar",
+      "classId": "NB",
+      "password": "10",
+      "photo": null
+    },
+    {
+      "id": "0098A",
+      "name": "Usman Saminu Aliyu",
+      "classId": "NB",
+      "password": "11",
+      "photo": null
+    },
+    {
+      "id": "0099A",
+      "name": "Yusif Shuaibu",
+      "classId": "NB",
+      "password": "12",
+      "photo": null
+    },
+    {
+      "id": "0100A",
+      "name": "Aisha Sadisu Mukhtar",
+      "classId": "NB",
+      "password": "13",
+      "photo": null
+    },
+    {
+      "id": "0101A",
+      "name": "Fatima Ali",
+      "classId": "NB",
+      "password": "14",
+      "photo": null
+    },
+    {
+      "id": "0102A",
+      "name": "Fatima Rabiu",
+      "classId": "NB",
+      "password": "15",
+      "photo": null
+    },
+    {
+      "id": "0103A",
+      "name": "Fatima Zakarai",
+      "classId": "NB",
+      "password": "16",
+      "photo": null
+    },
+    {
+      "id": "0104A",
+      "name": "Fatima Ismail Bashir",
+      "classId": "NB",
+      "password": "17",
+      "photo": null
+    },
+    {
+      "id": "0105A",
+      "name": "Faiza Abubakar",
+      "classId": "NB",
+      "password": "18",
+      "photo": null
+    },
+    {
+      "id": "0106A",
+      "name": "Khadija Shuaibu",
+      "classId": "NB",
+      "password": "19",
+      "photo": null
+    },
+    {
+      "id": "0107A",
+      "name": "Maryam Sani",
+      "classId": "NB",
+      "password": "20",
+      "photo": null
+    },
+    {
+      "id": "0108A",
+      "name": "Murjanatu Sunusi",
+      "classId": "NB",
+      "password": "21",
+      "photo": null
+    },
+    {
+      "id": "0109A",
+      "name": "Surayya Shuaibu",
+      "classId": "NB",
+      "password": "22",
+      "photo": null
+    },
+    {
+      "id": "0110A",
+      "name": "Shema'u Sani",
+      "classId": "NB",
+      "password": "23",
+      "photo": null
+    },
+    {
+      "id": "0111A",
+      "name": "Zainab Hamisu Isah",
+      "classId": "NB",
+      "password": "24",
+      "photo": null
+    },
+    {
+      "id": "0112A",
+      "name": "Rabiatu Auwalu",
+      "classId": "NB",
+      "password": "25",
+      "photo": null
+    },
+    {
+      "id": "0113A",
+      "name": "Jabir Yusif",
+      "classId": "NB",
+      "password": "26",
+      "photo": null
+    },
+    {
+      "id": "0114A",
+      "name": "Musa Sani Musa",
+      "classId": "NB",
+      "password": "27",
+      "photo": null
+    },
+    {
+      "id": "0115A",
+      "name": "Musayyib Yunusa",
+      "classId": "NB",
+      "password": "28",
+      "photo": null
+    },
+    {
+      "id": "0116A",
+      "name": "Usman Alfa",
+      "classId": "NB",
+      "password": "29",
+      "photo": null
+    },
+    {
+      "id": "0117A",
+      "name": "Abubakar Mustapha Hamza",
+      "classId": "NB",
+      "password": "30",
+      "photo": null
+    },
+    {
+      "id": "0118A",
+      "name": "Abdulhakim Halliru",
+      "classId": "NB",
+      "password": "31",
+      "photo": null
+    },
+    {
+      "id": "0119A",
+      "name": "Sunusi Hassan Muhammad",
+      "classId": "NB",
+      "password": "32",
+      "photo": null
+    },
+    {
+      "id": "0127A",
+      "name": "Anwar Abdullahi",
+      "classId": "NB",
+      "password": "33",
+      "photo": null
+    },
+    {
+      "id": "0128A",
+      "name": "Isah Sunusi",
+      "classId": "NB",
+      "password": "34",
+      "photo": null
+    },
+    {
+      "id": "0129A",
+      "name": "Fatima Sani",
+      "classId": "NB",
+      "password": "35",
+      "photo": null
+    },
+    {
+      "id": "0130A",
+      "name": "Fadi Rabiu",
+      "classId": "NB",
+      "password": "36",
+      "photo": null
+    },
+    {
+      "id": "0213A",
+      "name": "Abubakar Ibrahim",
+      "classId": "NA",
+      "password": "01",
+      "photo": null
+    },
+    {
+      "id": "0214A",
+      "name": "Abubakar Abdullahi",
+      "classId": "NA",
+      "password": "02",
+      "photo": null
+    },
+    {
+      "id": "0215A",
+      "name": "Abubakar Abdullahi Sani",
+      "classId": "NA",
+      "password": "03",
+      "photo": null
+    },
+    {
+      "id": "0216A",
+      "name": "Abdullahi Abbas Ahmad",
+      "classId": "NA",
+      "password": "04",
+      "photo": null
+    },
+    {
+      "id": "0217A",
+      "name": "Abdullahi Garba Mukhtar",
+      "classId": "NA",
+      "password": "05",
+      "photo": null
+    },
+    {
+      "id": "0218A",
+      "name": "Abdurrazaq Safwan",
+      "classId": "NA",
+      "password": "06",
+      "photo": null
+    },
+    {
+      "id": "0219A",
+      "name": "Abdurrahman Iliya",
+      "classId": "NA",
+      "password": "07",
+      "photo": null
+    },
+    {
+      "id": "0220A",
+      "name": "Abbas Rabiu",
+      "classId": "NA",
+      "password": "08",
+      "photo": null
+    },
+    {
+      "id": "0221A",
+      "name": "Ahmad Aminu Ibrahim",
+      "classId": "NA",
+      "password": "09",
+      "photo": null
+    },
+    {
+      "id": "0222A",
+      "name": "Adamu Lawan",
+      "classId": "NA",
+      "password": "10",
+      "photo": null
+    },
+    {
+      "id": "0223A",
+      "name": "Ammar Kabir Mahmud",
+      "classId": "NA",
+      "password": "11",
+      "photo": null
+    },
+    {
+      "id": "0224A",
+      "name": "Bello Dauda",
+      "classId": "NA",
+      "password": "12",
+      "photo": null
+    },
+    {
+      "id": "0225A",
+      "name": "Idris Yusif Idris",
+      "classId": "NA",
+      "password": "13",
+      "photo": null
+    },
+    {
+      "id": "0226A",
+      "name": "Ishaq Habibu Musa",
+      "classId": "NA",
+      "password": "14",
+      "photo": null
+    },
+    {
+      "id": "0227A",
+      "name": "Najib Mudassir",
+      "classId": "NA",
+      "password": "15",
+      "photo": null
+    },
+    {
+      "id": "0228A",
+      "name": "Yunusa Auwal",
+      "classId": "NA",
+      "password": "16",
+      "photo": null
+    },
+    {
+      "id": "0229A",
+      "name": "Ibrahim Ali Aminu",
+      "classId": "NA",
+      "password": "17",
+      "photo": null
+    },
+    {
+      "id": "0230A",
+      "name": "Muhammad Murtala",
+      "classId": "NA",
+      "password": "18",
+      "photo": null
+    },
+    {
+      "id": "0231A",
+      "name": "Sani Abubakar",
+      "classId": "NA",
+      "password": "19",
+      "photo": null
+    },
+    {
+      "id": "0232A",
+      "name": "Salisu Sani",
+      "classId": "NA",
+      "password": "20",
+      "photo": null
+    },
+    {
+      "id": "0233A",
+      "name": "Umar Auwalu Dalladi",
+      "classId": "NA",
+      "password": "21",
+      "photo": null
+    },
+    {
+      "id": "0234A",
+      "name": "Usman Mustapha Adamu",
+      "classId": "NA",
+      "password": "22",
+      "photo": null
+    },
+    {
+      "id": "0235A",
+      "name": "Kabiru Abba Ado",
+      "classId": "NA",
+      "password": "23",
+      "photo": null
+    },
+    {
+      "id": "0236A",
+      "name": "Mustapha Ahmad",
+      "classId": "NA",
+      "password": "24",
+      "photo": null
+    },
+    {
+      "id": "0237A",
+      "name": "Ahmad Bashir Abubakar",
+      "classId": "NA",
+      "password": "25",
+      "photo": null
+    },
+    {
+      "id": "0238A",
+      "name": "Aisha Nura Sabo",
+      "classId": "NA",
+      "password": "26",
+      "photo": null
+    },
+    {
+      "id": "0239A",
+      "name": "Aisha Jibrin Sarki",
+      "classId": "NA",
+      "password": "27",
+      "photo": null
+    },
+    {
+      "id": "0240A",
+      "name": "Fatima Muhammad Zainu",
+      "classId": "NA",
+      "password": "28",
+      "photo": null
+    },
+    {
+      "id": "0241A",
+      "name": "Bilkisu Ibrahim Sulaimn",
+      "classId": "NA",
+      "password": "29",
+      "photo": null
+    },
+    {
+      "id": "0242A",
+      "name": "Hafsat Anas",
+      "classId": "NA",
+      "password": "30",
+      "photo": null
+    },
+    {
+      "id": "0243A",
+      "name": "Habiba Isyaku Turajo",
+      "classId": "NA",
+      "password": "31",
+      "photo": null
+    },
+    {
+      "id": "0244A",
+      "name": "Halimatu Rabiu",
+      "classId": "NA",
+      "password": "32",
+      "photo": null
+    },
+    {
+      "id": "0245A",
+      "name": "Khadija Saminu Mukhtar",
+      "classId": "NA",
+      "password": "33",
+      "photo": null
+    },
+    {
+      "id": "0246A",
+      "name": "Khadija Kabiru Baita",
+      "classId": "NA",
+      "password": "34",
+      "photo": null
+    },
+    {
+      "id": "0247A",
+      "name": "Rahama Sani",
+      "classId": "NA",
+      "password": "35",
+      "photo": null
+    },
+    {
+      "id": "0248A",
+      "name": "Zainab Hamisu Abba",
+      "classId": "NA",
+      "password": "36",
+      "photo": null
+    },
+    {
+      "id": "0249A",
+      "name": "Zuwaira Abubakar Sulaiman",
+      "classId": "NA",
+      "password": "37",
+      "photo": null
+    },
+    {
+      "id": "0250A",
+      "name": "Khadija Adamu",
+      "classId": "JS1",
+      "password": "01",
+      "photo": null
+    },
+    {
+      "id": "0251A",
+      "name": "Muhammad Nasir Mansur",
+      "classId": "JS1",
+      "password": "02",
+      "photo": null
+    },
+    {
+      "id": "0252A",
+      "name": "Khadija Isah Muaz",
+      "classId": "JS1",
+      "password": "03",
+      "photo": null
+    },
+    {
+      "id": "0253A",
+      "name": "Isah Rabiu",
+      "classId": "JS1",
+      "password": "04",
+      "photo": null
+    },
+    {
+      "id": "0254A",
+      "name": "Umar Rabiu Adamu",
+      "classId": "JS1",
+      "password": "05",
+      "photo": null
+    },
+    {
+      "id": "0255A",
+      "name": "Mustapha Yakubu Tanko",
+      "classId": "JS1",
+      "password": "06",
+      "photo": null
+    },
+    {
+      "id": "0256A",
+      "name": "Abdulhamid Muhammad Dayyab",
+      "classId": "JS1",
+      "password": "07",
+      "photo": null
+    },
+    {
+      "id": "0257A",
+      "name": "Sabir Nura Inuwa",
+      "classId": "JS1",
+      "password": "08",
+      "photo": null
+    },
+    {
+      "id": "0258A",
+      "name": "Zahra'u Ahmad Musa",
+      "classId": "JS1",
+      "password": "09",
+      "photo": null
+    },
+    {
+      "id": "0259A",
+      "name": "Ahmad Hamisu Dahiru",
+      "classId": "JS1",
+      "password": "10",
+      "photo": null
+    },
+    {
+      "id": "0260A",
+      "name": "Husna Ahmad Musa",
+      "classId": "JS1",
+      "password": "11",
+      "photo": null
+    },
+    {
+      "id": "0261A",
+      "name": "Surayya Ahmad Musa",
+      "classId": "JS1",
+      "password": "12",
+      "photo": null
+    },
+    {
+      "id": "0262A",
+      "name": "Fatima Musa Abdullahi",
+      "classId": "JS1",
+      "password": "13",
+      "photo": null
+    },
+    {
+      "id": "0263A",
+      "name": "Hassana Hamisu Ado",
+      "classId": "JS1",
+      "password": "14",
+      "photo": null
+    },
+    {
+      "id": "0264A",
+      "name": "Hauwa'u Auwalu Abba",
+      "classId": "JS1",
+      "password": "15",
+      "photo": null
+    },
+    {
+      "id": "0265A",
+      "name": "Fatima Auwalu Ahmad",
+      "classId": "JS1",
+      "password": "16",
+      "photo": null
+    },
+    {
+      "id": "0266A",
+      "name": "Ismail Sunusi",
+      "classId": "JS1",
+      "password": "17",
+      "photo": null
+    },
+    {
+      "id": "0267A",
+      "name": "Yusif Rabiu Adamu",
+      "classId": "JS1",
+      "password": "18",
+      "photo": null
+    },
+    {
+      "id": "0268A",
+      "name": "Adamu Mustapha Adamu",
+      "classId": "JS1",
+      "password": "19",
+      "photo": null
+    },
+    {
+      "id": "0269A",
+      "name": "Nura Basiru",
+      "classId": "JS1",
+      "password": "20",
+      "photo": null
+    },
+    {
+      "id": "0270A",
+      "name": "Faiza Ahmad Sulaiman",
+      "classId": "JS1",
+      "password": "21",
+      "photo": null
+    },
+    {
+      "id": "0271A",
+      "name": "Baffa Sani Bako",
+      "classId": "JS1",
+      "password": "22",
+      "photo": null
+    },
+    {
+      "id": "0272A",
+      "name": "Adamu Auwalu Ahmad",
+      "classId": "JS1",
+      "password": "23",
+      "photo": null
+    },
+    {
+      "id": "0273A",
+      "name": "Alasan Ibrahim",
+      "classId": "JS1",
+      "password": "24",
+      "photo": null
+    },
+    {
+      "id": "0274A",
+      "name": "Dini Ibrahim",
+      "classId": "JS1",
+      "password": "25",
+      "photo": null
+    },
+    {
+      "id": "0275A",
+      "name": "Alhassan Sale",
+      "classId": "JS1",
+      "password": "26",
+      "photo": null
+    },
+    {
+      "id": "0276A",
+      "name": "Usaina Adamu",
+      "classId": "JS1",
+      "password": "27",
+      "photo": null
+    },
+    {
+      "id": "0277A",
+      "name": "Nabil Suraja",
+      "classId": "JS1",
+      "password": "28",
+      "photo": null
+    },
+    {
+      "id": "0278A",
+      "name": "Salma Ikiramata",
+      "classId": "JS1",
+      "password": "29",
+      "photo": null
+    },
+    {
+      "id": "0280A",
+      "name": "Nawas Adamu",
+      "classId": "JS1",
+      "password": "30",
+      "photo": null
+    },
+    {
+      "id": "0281A",
+      "name": "Bushra Garba",
+      "classId": "JS1",
+      "password": "31",
+      "photo": null
+    },
+    {
+      "id": "0282A",
+      "name": "Rabiatu Nasir Abubakar",
+      "classId": "JS1",
+      "password": "32",
+      "photo": null
+    },
+    {
+      "id": "0283A",
+      "name": "Sadiya Aliyu Ali",
+      "classId": "JS1",
+      "password": "33",
+      "photo": null
+    },
+    {
+      "id": "0284A",
+      "name": "Sadiqa Tasiu",
+      "classId": "JS1",
+      "password": "34",
+      "photo": null
+    },
+    {
+      "id": "0285A",
+      "name": "Dahiru Abubakar Mansur",
+      "classId": "JS1",
+      "password": "35",
+      "photo": null
+    },
+    {
+      "id": "0286A",
+      "name": "Ahmad Hamisu Ahmad",
+      "classId": "JS1",
+      "password": "36",
+      "photo": null
+    },
+    {
+      "id": "0287A",
+      "name": "Anas Hamisu Ahmad",
+      "classId": "JS1",
+      "password": "37",
+      "photo": null
+    },
+    {
+      "id": "0288A",
+      "name": "Aliyu Usman Dankanawa",
+      "classId": "JS1",
+      "password": "38",
+      "photo": null
+    },
+    {
+      "id": "0289A",
+      "name": "Ahmad Garba",
+      "classId": "JS1",
+      "password": "39",
+      "photo": null
+    },
+    {
+      "id": "0290A",
+      "name": "Sadiya Danbala",
+      "classId": "JS1",
+      "password": "40",
+      "photo": null
+    },
+    {
+      "id": "0291A",
+      "name": "Maryam Adamu",
+      "classId": "JS1",
+      "password": "41",
+      "photo": null
+    }
+  ],
+  "subjects": [
+    {
+      "id": "ENG",
+      "name": "English",
+      "classId": "JSS2",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": []
+      }
+    },
+    {
+      "id": "MTH",
+      "name": "Mathematics",
+      "classId": "JSS2",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "MTH-EXAM-Q1",
+            "text": "what is 20 -20",
+            "options": [
+              "9",
+              "0",
+              "4",
+              "3",
+              "5",
+              "6",
+              "7"
+            ],
+            "answer": "0",
+            "marks": 100,
+            "image": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "MTH",
+      "name": "Mathematics",
+      "classId": "JSS1",
+      "questions": {
+        "test1": [
+          {
+            "qid": "MTH-T1-Q1",
+            "text": "2 + 4",
+            "options": [
+              "9",
+              "2",
+              "3",
+              "6"
+            ],
+            "answer": "6",
+            "marks": 100,
+            "image": null
+          }
+        ],
+        "test2": [
+          {
+            "qid": "MTH-T2-Q1",
+            "text": "1+4",
+            "options": [
+              "9",
+              "5",
+              "2",
+              "6",
+              "7"
+            ],
+            "answer": "5",
+            "marks": 100,
+            "image": null
+          }
+        ],
+        "test3": [
+          {
+            "qid": "MTH-T3-Q1",
+            "text": "3-3",
+            "options": [
+              "0",
+              "4",
+              "1",
+              "4",
+              "6",
+              "4"
+            ],
+            "answer": "0",
+            "marks": 100,
+            "image": null
+          }
+        ],
+        "exam": [
+          {
+            "qid": "MTH-EXAM-Q1",
+            "text": "find the biggest number, 80, 89, 68, 90",
+            "options": [
+              "90",
+              "57",
+              "67"
+            ],
+            "answer": "90",
+            "marks": 100,
+            "image": null
+          }
+        ]
+      },
+      "timeLimits": {
+        "test1": 30,
+        "test2": 30,
+        "test3": 30,
+        "exam": 60
+      }
+    },
+    {
+      "id": "MTH",
+      "name": "Mathematics",
+      "classId": "JSS 2",
+      "questions": {
+        "test1": [
+          {
+            "qid": "MTH-T1-Q1",
+            "text": "2 + 4",
+            "options": [
+              "9",
+              "2",
+              "3",
+              "6"
+            ],
+            "answer": "6",
+            "marks": 100,
+            "image": null
+          }
+        ],
+        "test2": [
+          {
+            "qid": "MTH-T2-Q1",
+            "text": "1+4",
+            "options": [
+              "9",
+              "5",
+              "2",
+              "6",
+              "7"
+            ],
+            "answer": "5",
+            "marks": 100,
+            "image": null
+          }
+        ],
+        "test3": [
+          {
+            "qid": "MTH-T3-Q1",
+            "text": "3-3",
+            "options": [
+              "0",
+              "4",
+              "1",
+              "4",
+              "6",
+              "4"
+            ],
+            "answer": "0",
+            "marks": 100,
+            "image": null
+          }
+        ],
+        "exam": [
+          {
+            "qid": "MTH-EXAM-Q1",
+            "text": "find the biggest number, 80, 89, 68, 90",
+            "options": [
+              "90",
+              "57",
+              "67"
+            ],
+            "answer": "90",
+            "marks": 100,
+            "image": null
+          },
+          {
+            "qid": "MTH-EXAM-Q2",
+            "text": "5 X 5",
+            "options": [
+              "1"
+            ],
+            "answer": "3",
+            "marks": 25
+          }
+        ]
+      },
+      "timeLimits": {
+        "test1": 1,
+        "test2": 30,
+        "test3": 30,
+        "exam": 60
+      }
+    },
+    {
+      "id": "GAK",
+      "name": "Garko",
+      "classId": "JSS1",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "GAK-EXAM-Q1",
+            "text": "what is hand",
+            "options": [
+              "finger",
+              "rem",
+              "het"
+            ],
+            "answer": "finger",
+            "marks": 1,
+            "image": null
+          }
+        ]
+      },
+      "timeLimits": {
+        "test1": 30,
+        "test2": 30,
+        "test3": 30,
+        "exam": 60
+      }
+    },
+    {
+      "id": "FSH",
+      "name": "Fishery ",
+      "classId": "SS1",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "FSH-EXAM-Q1",
+            "text": "What is fish",
+            "options": [
+              "Fish is aquatic",
+              "fish is terrestrial",
+              "fish is water"
+            ],
+            "answer": "Fish is aquatic ",
+            "marks": 100,
+            "image": null
+          }
+        ]
+      },
+      "timeLimits": {
+        "test1": 30,
+        "test2": 30,
+        "test3": 30,
+        "exam": 1
+      }
+    },
+    {
+      "id": "SOH",
+      "name": "Social Habit",
+      "classId": "SS1",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": []
+      },
+      "timeLimits": {
+        "test1": 30,
+        "test2": 30,
+        "test3": 30,
+        "exam": 60
+      }
+    },
+    {
+      "id": "MTH",
+      "name": "Mathematics",
+      "classId": "SS1",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "MTH-EXAM-Q1",
+            "text": "1 -2",
+            "options": [
+              "1",
+              "-1",
+              "3"
+            ],
+            "answer": "-1",
+            "marks": 100,
+            "image": null
+          }
+        ]
+      },
+      "timeLimits": {
+        "test1": 30,
+        "test2": 30,
+        "test3": 30,
+        "exam": 60
+      }
+    },
+    {
+      "id": "HHB",
+      "name": "Health Habit",
+      "classId": "JSS1",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": []
+      },
+      "timeLimits": {
+        "test1": 30,
+        "test2": 30,
+        "test3": 30,
+        "exam": 60
+      }
+    },
+    {
+      "id": "TST",
+      "name": "Test 1",
+      "classId": "PNA",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "MTH-EXAM-Q1",
+            "text": "After 25 which number come next",
+            "options": [
+              "23",
+              "27",
+              "26"
+            ],
+            "answer": "26",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q2",
+            "text": "In BODMAS, S is for subtraction",
+            "options": [
+              "True",
+              "false"
+            ],
+            "answer": "TRUE",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q3",
+            "text": "If 2 + 2  is 5,  then 2 x 2 is....",
+            "options": [
+              "3",
+              "5",
+              "4"
+            ],
+            "answer": "4",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q4",
+            "text": "2H + 1H is equal to........",
+            "options": [
+              "4H",
+              "5H",
+              "3H"
+            ],
+            "answer": "3H",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q5",
+            "text": "After 14, the next number is...",
+            "options": [
+              "16",
+              "15",
+              "17"
+            ],
+            "answer": "15",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q6",
+            "text": "You have two balls, Uncle give you one ball, how many balls with you",
+            "options": [
+              "2",
+              "3",
+              "5"
+            ],
+            "answer": "3",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q7",
+            "text": "1, 3, 4,5,7..... Find the missing numbers",
+            "options": [
+              "1 and 6",
+              "3 and 4",
+              "2 and 6"
+            ],
+            "answer": "2 and 6",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q8",
+            "text": "0 -  9 are called",
+            "options": [
+              "Unit",
+              "hundreds",
+              "tenth"
+            ],
+            "answer": "tenth",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q9",
+            "text": "How many letters in ASSALAM",
+            "options": [
+              "7",
+              "8",
+              "5"
+            ],
+            "answer": "7",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q10",
+            "text": "Which is the big number",
+            "options": [
+              "5454",
+              "1231",
+              "11111"
+            ],
+            "answer": "1111",
+            "marks": 2
+          }
+        ]
+      },
+      "timeLimits": {
+        "test1": 30,
+        "test2": 30,
+        "test3": 30,
+        "exam": 60
+      }
+    },
+    {
+      "id": "TST",
+      "name": "Test 1",
+      "classId": "P1",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "MTH-EXAM-Q1",
+            "text": "After 25 which number come next",
+            "options": [
+              "23",
+              "27",
+              "26"
+            ],
+            "answer": "26",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q2",
+            "text": "In BODMAS, S is for subtraction",
+            "options": [
+              "True",
+              "false"
+            ],
+            "answer": "TRUE",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q3",
+            "text": "If 2 + 2  is 5,  then 2 x 2 is....",
+            "options": [
+              "3",
+              "5",
+              "4"
+            ],
+            "answer": "4",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q4",
+            "text": "2H + 1H is equal to........",
+            "options": [
+              "4H",
+              "5H",
+              "3H"
+            ],
+            "answer": "3H",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q5",
+            "text": "After 14, the next number is...",
+            "options": [
+              "16",
+              "15",
+              "17"
+            ],
+            "answer": "15",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q6",
+            "text": "You have two balls, Uncle give you one ball, how many balls with you",
+            "options": [
+              "2",
+              "3",
+              "5"
+            ],
+            "answer": "3",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q7",
+            "text": "1, 3, 4,5,7..... Find the missing numbers",
+            "options": [
+              "1 and 6",
+              "3 and 4",
+              "2 and 6"
+            ],
+            "answer": "2 and 6",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q8",
+            "text": "0 -  9 are called",
+            "options": [
+              "Unit",
+              "hundreds",
+              "tenth"
+            ],
+            "answer": "tenth",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q9",
+            "text": "How many letters in ASSALAM",
+            "options": [
+              "7",
+              "8",
+              "5"
+            ],
+            "answer": "7",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q10",
+            "text": "Which is the big number",
+            "options": [
+              "5454",
+              "1231",
+              "11111"
+            ],
+            "answer": "1111",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "TST",
+      "name": "Test 1",
+      "classId": "P2",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "MTH-EXAM-Q1",
+            "text": "After 25 which number come next",
+            "options": [
+              "23",
+              "27",
+              "26"
+            ],
+            "answer": "26",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q2",
+            "text": "In BODMAS, S is for subtraction",
+            "options": [
+              "True",
+              "false"
+            ],
+            "answer": "TRUE",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q3",
+            "text": "If 2 + 2  is 5,  then 2 x 2 is....",
+            "options": [
+              "3",
+              "5",
+              "4"
+            ],
+            "answer": "4",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q4",
+            "text": "2H + 1H is equal to........",
+            "options": [
+              "4H",
+              "5H",
+              "3H"
+            ],
+            "answer": "3H",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q5",
+            "text": "After 14, the next number is...",
+            "options": [
+              "16",
+              "15",
+              "17"
+            ],
+            "answer": "15",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q6",
+            "text": "You have two balls, Uncle give you one ball, how many balls with you",
+            "options": [
+              "2",
+              "3",
+              "5"
+            ],
+            "answer": "3",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q7",
+            "text": "1, 3, 4,5,7..... Find the missing numbers",
+            "options": [
+              "1 and 6",
+              "3 and 4",
+              "2 and 6"
+            ],
+            "answer": "2 and 6",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q8",
+            "text": "0 -  9 are called",
+            "options": [
+              "Unit",
+              "hundreds",
+              "tenth"
+            ],
+            "answer": "tenth",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q9",
+            "text": "How many letters in ASSALAM",
+            "options": [
+              "7",
+              "8",
+              "5"
+            ],
+            "answer": "7",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q10",
+            "text": "Which is the big number",
+            "options": [
+              "5454",
+              "1231",
+              "11111"
+            ],
+            "answer": "1111",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "TST",
+      "name": "Test 1",
+      "classId": "P3",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "MTH-EXAM-Q1",
+            "text": "After 25 which number come next",
+            "options": [
+              "23",
+              "27",
+              "26"
+            ],
+            "answer": "26",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q2",
+            "text": "In BODMAS, S is for subtraction",
+            "options": [
+              "True",
+              "false"
+            ],
+            "answer": "TRUE",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q3",
+            "text": "If 2 + 2  is 5,  then 2 x 2 is....",
+            "options": [
+              "3",
+              "5",
+              "4"
+            ],
+            "answer": "4",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q4",
+            "text": "2H + 1H is equal to........",
+            "options": [
+              "4H",
+              "5H",
+              "3H"
+            ],
+            "answer": "3H",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q5",
+            "text": "After 14, the next number is...",
+            "options": [
+              "16",
+              "15",
+              "17"
+            ],
+            "answer": "15",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q6",
+            "text": "You have two balls, Uncle give you one ball, how many balls with you",
+            "options": [
+              "2",
+              "3",
+              "5"
+            ],
+            "answer": "3",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q7",
+            "text": "1, 3, 4,5,7..... Find the missing numbers",
+            "options": [
+              "1 and 6",
+              "3 and 4",
+              "2 and 6"
+            ],
+            "answer": "2 and 6",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q8",
+            "text": "0 -  9 are called",
+            "options": [
+              "Unit",
+              "hundreds",
+              "tenth"
+            ],
+            "answer": "tenth",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q9",
+            "text": "How many letters in ASSALAM",
+            "options": [
+              "7",
+              "8",
+              "5"
+            ],
+            "answer": "7",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q10",
+            "text": "Which is the big number",
+            "options": [
+              "5454",
+              "1231",
+              "11111"
+            ],
+            "answer": "1111",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "TST",
+      "name": "Test 1",
+      "classId": "JS1",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "MTH-EXAM-Q1",
+            "text": "After 25 which number come next",
+            "options": [
+              "23",
+              "27",
+              "26"
+            ],
+            "answer": "26",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q2",
+            "text": "In BODMAS, S is for subtraction",
+            "options": [
+              "True",
+              "false"
+            ],
+            "answer": "TRUE",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q3",
+            "text": "If 2 + 2  is 5,  then 2 x 2 is....",
+            "options": [
+              "3",
+              "5",
+              "4"
+            ],
+            "answer": "4",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q4",
+            "text": "2H + 1H is equal to........",
+            "options": [
+              "4H",
+              "5H",
+              "3H"
+            ],
+            "answer": "3H",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q5",
+            "text": "After 14, the next number is...",
+            "options": [
+              "16",
+              "15",
+              "17"
+            ],
+            "answer": "15",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q6",
+            "text": "You have two balls, Uncle give you one ball, how many balls with you",
+            "options": [
+              "2",
+              "3",
+              "5"
+            ],
+            "answer": "3",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q7",
+            "text": "1, 3, 4,5,7..... Find the missing numbers",
+            "options": [
+              "1 and 6",
+              "3 and 4",
+              "2 and 6"
+            ],
+            "answer": "2 and 6",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q8",
+            "text": "0 -  9 are called",
+            "options": [
+              "Unit",
+              "hundreds",
+              "tenth"
+            ],
+            "answer": "tenth",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q9",
+            "text": "How many letters in ASSALAM",
+            "options": [
+              "7",
+              "8",
+              "5"
+            ],
+            "answer": "7",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q10",
+            "text": "Which is the big number",
+            "options": [
+              "5454",
+              "1231",
+              "11111"
+            ],
+            "answer": "1111",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "TST",
+      "name": "Test 1",
+      "classId": "PNB",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "MTH-EXAM-Q1",
+            "text": "After 25 which number come next",
+            "options": [
+              "23",
+              "27",
+              "26"
+            ],
+            "answer": "26",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q2",
+            "text": "In BODMAS, S is for subtraction",
+            "options": [
+              "True",
+              "false"
+            ],
+            "answer": "TRUE",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q3",
+            "text": "If 2 + 2  is 5,  then 2 x 2 is....",
+            "options": [
+              "3",
+              "5",
+              "4"
+            ],
+            "answer": "4",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q4",
+            "text": "2H + 1H is equal to........",
+            "options": [
+              "4H",
+              "5H",
+              "3H"
+            ],
+            "answer": "3H",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q5",
+            "text": "After 14, the next number is...",
+            "options": [
+              "16",
+              "15",
+              "17"
+            ],
+            "answer": "15",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q6",
+            "text": "You have two balls, Uncle give you one ball, how many balls with you",
+            "options": [
+              "2",
+              "3",
+              "5"
+            ],
+            "answer": "3",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q7",
+            "text": "1, 3, 4,5,7..... Find the missing numbers",
+            "options": [
+              "1 and 6",
+              "3 and 4",
+              "2 and 6"
+            ],
+            "answer": "2 and 6",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q8",
+            "text": "0 -  9 are called",
+            "options": [
+              "Unit",
+              "hundreds",
+              "tenth"
+            ],
+            "answer": "tenth",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q9",
+            "text": "How many letters in ASSALAM",
+            "options": [
+              "7",
+              "8",
+              "5"
+            ],
+            "answer": "7",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q10",
+            "text": "Which is the big number",
+            "options": [
+              "5454",
+              "1231",
+              "11111"
+            ],
+            "answer": "1111",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "TST",
+      "name": "Test 1",
+      "classId": "NA",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "MTH-EXAM-Q1",
+            "text": "After 25 which number come next",
+            "options": [
+              "23",
+              "27",
+              "26"
+            ],
+            "answer": "26",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q2",
+            "text": "In BODMAS, S is for subtraction",
+            "options": [
+              "True",
+              "false"
+            ],
+            "answer": "TRUE",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q3",
+            "text": "If 2 + 2  is 5,  then 2 x 2 is....",
+            "options": [
+              "3",
+              "5",
+              "4"
+            ],
+            "answer": "4",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q4",
+            "text": "2H + 1H is equal to........",
+            "options": [
+              "4H",
+              "5H",
+              "3H"
+            ],
+            "answer": "3H",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q5",
+            "text": "After 14, the next number is...",
+            "options": [
+              "16",
+              "15",
+              "17"
+            ],
+            "answer": "15",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q6",
+            "text": "You have two balls, Uncle give you one ball, how many balls with you",
+            "options": [
+              "2",
+              "3",
+              "5"
+            ],
+            "answer": "3",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q7",
+            "text": "1, 3, 4,5,7..... Find the missing numbers",
+            "options": [
+              "1 and 6",
+              "3 and 4",
+              "2 and 6"
+            ],
+            "answer": "2 and 6",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q8",
+            "text": "0 -  9 are called",
+            "options": [
+              "Unit",
+              "hundreds",
+              "tenth"
+            ],
+            "answer": "tenth",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q9",
+            "text": "How many letters in ASSALAM",
+            "options": [
+              "7",
+              "8",
+              "5"
+            ],
+            "answer": "7",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q10",
+            "text": "Which is the big number",
+            "options": [
+              "5454",
+              "1231",
+              "11111"
+            ],
+            "answer": "1111",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "TST",
+      "name": "Test 1",
+      "classId": "NB",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "MTH-EXAM-Q1",
+            "text": "After 25 which number come next",
+            "options": [
+              "23",
+              "27",
+              "26"
+            ],
+            "answer": "26",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q2",
+            "text": "In BODMAS, S is for subtraction",
+            "options": [
+              "True",
+              "false"
+            ],
+            "answer": "TRUE",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q3",
+            "text": "If 2 + 2  is 5,  then 2 x 2 is....",
+            "options": [
+              "3",
+              "5",
+              "4"
+            ],
+            "answer": "4",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q4",
+            "text": "2H + 1H is equal to........",
+            "options": [
+              "4H",
+              "5H",
+              "3H"
+            ],
+            "answer": "3H",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q5",
+            "text": "After 14, the next number is...",
+            "options": [
+              "16",
+              "15",
+              "17"
+            ],
+            "answer": "15",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q6",
+            "text": "You have two balls, Uncle give you one ball, how many balls with you",
+            "options": [
+              "2",
+              "3",
+              "5"
+            ],
+            "answer": "3",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q7",
+            "text": "1, 3, 4,5,7..... Find the missing numbers",
+            "options": [
+              "1 and 6",
+              "3 and 4",
+              "2 and 6"
+            ],
+            "answer": "2 and 6",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q8",
+            "text": "0 -  9 are called",
+            "options": [
+              "Unit",
+              "hundreds",
+              "tenth"
+            ],
+            "answer": "tenth",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q9",
+            "text": "How many letters in ASSALAM",
+            "options": [
+              "7",
+              "8",
+              "5"
+            ],
+            "answer": "7",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q10",
+            "text": "Which is the big number",
+            "options": [
+              "5454",
+              "1231",
+              "11111"
+            ],
+            "answer": "1111",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "TST",
+      "name": "Test 1",
+      "classId": "KGT",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "MTH-EXAM-Q1",
+            "text": "After 25 which number come next",
+            "options": [
+              "23",
+              "27",
+              "26"
+            ],
+            "answer": "26",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q2",
+            "text": "In BODMAS, S is for subtraction",
+            "options": [
+              "True",
+              "false"
+            ],
+            "answer": "TRUE",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q3",
+            "text": "If 2 + 2  is 5,  then 2 x 2 is....",
+            "options": [
+              "3",
+              "5",
+              "4"
+            ],
+            "answer": "4",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q4",
+            "text": "2H + 1H is equal to........",
+            "options": [
+              "4H",
+              "5H",
+              "3H"
+            ],
+            "answer": "3H",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q5",
+            "text": "After 14, the next number is...",
+            "options": [
+              "16",
+              "15",
+              "17"
+            ],
+            "answer": "15",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q6",
+            "text": "You have two balls, Uncle give you one ball, how many balls with you",
+            "options": [
+              "2",
+              "3",
+              "5"
+            ],
+            "answer": "3",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q7",
+            "text": "1, 3, 4,5,7..... Find the missing numbers",
+            "options": [
+              "1 and 6",
+              "3 and 4",
+              "2 and 6"
+            ],
+            "answer": "2 and 6",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q8",
+            "text": "0 -  9 are called",
+            "options": [
+              "Unit",
+              "hundreds",
+              "tenth"
+            ],
+            "answer": "tenth",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q9",
+            "text": "How many letters in ASSALAM",
+            "options": [
+              "7",
+              "8",
+              "5"
+            ],
+            "answer": "7",
+            "marks": 2
+          },
+          {
+            "qid": "MTH-EXAM-Q10",
+            "text": "Which is the big number",
+            "options": [
+              "5454",
+              "1231",
+              "11111"
+            ],
+            "answer": "1111",
+            "marks": 2
+          }
+        ]
+      },
+      "timeLimits": {
+        "test1": 30,
+        "test2": 30,
+        "test3": 30,
+        "exam": 60
+      }
+    },
+    {
+      "id": "TST2",
+      "name": "Test 2",
+      "classId": "KGT",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "ENG-EXAM-Q1",
+            "text": "Choose two letter word",
+            "options": [
+              "Bat",
+              "fast",
+              "at"
+            ],
+            "answer": "at",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q2",
+            "text": ".... Is the name of person, place or things",
+            "options": [
+              "Verb",
+              "noun",
+              "adjective"
+            ],
+            "answer": "noun",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q3",
+            "text": "Choose small letter of A",
+            "options": [
+              "a",
+              "b",
+              "n"
+            ],
+            "answer": "a",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q4",
+            "text": "Examples of fruit is....",
+            "options": [
+              "Mango",
+              "fish",
+              "egg"
+            ],
+            "answer": "Mango",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q5",
+            "text": "A is for",
+            "options": [
+              "Apple",
+              "sun",
+              "pot"
+            ],
+            "answer": "Apple",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q6",
+            "text": "B is for …",
+            "options": [
+              "Cat",
+              "ball",
+              "goat"
+            ],
+            "answer": "ball",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q7",
+            "text": "Choose the third letter of alphabet",
+            "options": [
+              "A",
+              "D",
+              "C"
+            ],
+            "answer": "C",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q8",
+            "text": "What is the name of your school",
+            "options": [
+              "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
+              "Garko girls science"
+            ],
+            "answer": "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q9",
+            "text": "If B is for big then S is for",
+            "options": [
+              "Small",
+              "sell",
+              "son"
+            ],
+            "answer": "Small",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q10",
+            "text": "Is F is for father then, M is for",
+            "options": [
+              "Mother",
+              "mad",
+              "mañ"
+            ],
+            "answer": "Mother",
+            "marks": 2
+          }
+        ]
+      },
+      "timeLimits": {
+        "test1": 30,
+        "test2": 30,
+        "test3": 30,
+        "exam": 60
+      }
+    },
+    {
+      "id": "TST2",
+      "name": "Test 2",
+      "classId": "P1",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "ENG-EXAM-Q1",
+            "text": "Choose two letter word",
+            "options": [
+              "Bat",
+              "fast",
+              "at"
+            ],
+            "answer": "at",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q2",
+            "text": ".... Is the name of person, place or things",
+            "options": [
+              "Verb",
+              "noun",
+              "adjective"
+            ],
+            "answer": "noun",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q3",
+            "text": "Choose small letter of A",
+            "options": [
+              "a",
+              "b",
+              "n"
+            ],
+            "answer": "a",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q4",
+            "text": "Examples of fruit is....",
+            "options": [
+              "Mango",
+              "fish",
+              "egg"
+            ],
+            "answer": "Mango",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q5",
+            "text": "A is for",
+            "options": [
+              "Apple",
+              "sun",
+              "pot"
+            ],
+            "answer": "Apple",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q6",
+            "text": "B is for …",
+            "options": [
+              "Cat",
+              "ball",
+              "goat"
+            ],
+            "answer": "ball",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q7",
+            "text": "Choose the third letter of alphabet",
+            "options": [
+              "A",
+              "D",
+              "C"
+            ],
+            "answer": "C",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q8",
+            "text": "What is the name of your school",
+            "options": [
+              "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
+              "Garko girls science"
+            ],
+            "answer": "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q9",
+            "text": "If B is for big then S is for",
+            "options": [
+              "Small",
+              "sell",
+              "son"
+            ],
+            "answer": "Small",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q10",
+            "text": "Is F is for father then, M is for",
+            "options": [
+              "Mother",
+              "mad",
+              "mañ"
+            ],
+            "answer": "Mother",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "TST2",
+      "name": "Test 2",
+      "classId": "P2",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "ENG-EXAM-Q1",
+            "text": "Choose two letter word",
+            "options": [
+              "Bat",
+              "fast",
+              "at"
+            ],
+            "answer": "at",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q2",
+            "text": ".... Is the name of person, place or things",
+            "options": [
+              "Verb",
+              "noun",
+              "adjective"
+            ],
+            "answer": "noun",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q3",
+            "text": "Choose small letter of A",
+            "options": [
+              "a",
+              "b",
+              "n"
+            ],
+            "answer": "a",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q4",
+            "text": "Examples of fruit is....",
+            "options": [
+              "Mango",
+              "fish",
+              "egg"
+            ],
+            "answer": "Mango",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q5",
+            "text": "A is for",
+            "options": [
+              "Apple",
+              "sun",
+              "pot"
+            ],
+            "answer": "Apple",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q6",
+            "text": "B is for …",
+            "options": [
+              "Cat",
+              "ball",
+              "goat"
+            ],
+            "answer": "ball",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q7",
+            "text": "Choose the third letter of alphabet",
+            "options": [
+              "A",
+              "D",
+              "C"
+            ],
+            "answer": "C",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q8",
+            "text": "What is the name of your school",
+            "options": [
+              "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
+              "Garko girls science"
+            ],
+            "answer": "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q9",
+            "text": "If B is for big then S is for",
+            "options": [
+              "Small",
+              "sell",
+              "son"
+            ],
+            "answer": "Small",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q10",
+            "text": "Is F is for father then, M is for",
+            "options": [
+              "Mother",
+              "mad",
+              "mañ"
+            ],
+            "answer": "Mother",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "TST2",
+      "name": "Test 2",
+      "classId": "P3",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "ENG-EXAM-Q1",
+            "text": "Choose two letter word",
+            "options": [
+              "Bat",
+              "fast",
+              "at"
+            ],
+            "answer": "at",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q2",
+            "text": ".... Is the name of person, place or things",
+            "options": [
+              "Verb",
+              "noun",
+              "adjective"
+            ],
+            "answer": "noun",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q3",
+            "text": "Choose small letter of A",
+            "options": [
+              "a",
+              "b",
+              "n"
+            ],
+            "answer": "a",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q4",
+            "text": "Examples of fruit is....",
+            "options": [
+              "Mango",
+              "fish",
+              "egg"
+            ],
+            "answer": "Mango",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q5",
+            "text": "A is for",
+            "options": [
+              "Apple",
+              "sun",
+              "pot"
+            ],
+            "answer": "Apple",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q6",
+            "text": "B is for …",
+            "options": [
+              "Cat",
+              "ball",
+              "goat"
+            ],
+            "answer": "ball",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q7",
+            "text": "Choose the third letter of alphabet",
+            "options": [
+              "A",
+              "D",
+              "C"
+            ],
+            "answer": "C",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q8",
+            "text": "What is the name of your school",
+            "options": [
+              "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
+              "Garko girls science"
+            ],
+            "answer": "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q9",
+            "text": "If B is for big then S is for",
+            "options": [
+              "Small",
+              "sell",
+              "son"
+            ],
+            "answer": "Small",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q10",
+            "text": "Is F is for father then, M is for",
+            "options": [
+              "Mother",
+              "mad",
+              "mañ"
+            ],
+            "answer": "Mother",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "TST2",
+      "name": "Test 2",
+      "classId": "PNA",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "ENG-EXAM-Q1",
+            "text": "Choose two letter word",
+            "options": [
+              "Bat",
+              "fast",
+              "at"
+            ],
+            "answer": "at",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q2",
+            "text": ".... Is the name of person, place or things",
+            "options": [
+              "Verb",
+              "noun",
+              "adjective"
+            ],
+            "answer": "noun",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q3",
+            "text": "Choose small letter of A",
+            "options": [
+              "a",
+              "b",
+              "n"
+            ],
+            "answer": "a",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q4",
+            "text": "Examples of fruit is....",
+            "options": [
+              "Mango",
+              "fish",
+              "egg"
+            ],
+            "answer": "Mango",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q5",
+            "text": "A is for",
+            "options": [
+              "Apple",
+              "sun",
+              "pot"
+            ],
+            "answer": "Apple",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q6",
+            "text": "B is for …",
+            "options": [
+              "Cat",
+              "ball",
+              "goat"
+            ],
+            "answer": "ball",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q7",
+            "text": "Choose the third letter of alphabet",
+            "options": [
+              "A",
+              "D",
+              "C"
+            ],
+            "answer": "C",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q8",
+            "text": "What is the name of your school",
+            "options": [
+              "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
+              "Garko girls science"
+            ],
+            "answer": "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q9",
+            "text": "If B is for big then S is for",
+            "options": [
+              "Small",
+              "sell",
+              "son"
+            ],
+            "answer": "Small",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q10",
+            "text": "Is F is for father then, M is for",
+            "options": [
+              "Mother",
+              "mad",
+              "mañ"
+            ],
+            "answer": "Mother",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "TST2",
+      "name": "Test 2",
+      "classId": "PNB",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "ENG-EXAM-Q1",
+            "text": "Choose two letter word",
+            "options": [
+              "Bat",
+              "fast",
+              "at"
+            ],
+            "answer": "at",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q2",
+            "text": ".... Is the name of person, place or things",
+            "options": [
+              "Verb",
+              "noun",
+              "adjective"
+            ],
+            "answer": "noun",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q3",
+            "text": "Choose small letter of A",
+            "options": [
+              "a",
+              "b",
+              "n"
+            ],
+            "answer": "a",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q4",
+            "text": "Examples of fruit is....",
+            "options": [
+              "Mango",
+              "fish",
+              "egg"
+            ],
+            "answer": "Mango",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q5",
+            "text": "A is for",
+            "options": [
+              "Apple",
+              "sun",
+              "pot"
+            ],
+            "answer": "Apple",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q6",
+            "text": "B is for …",
+            "options": [
+              "Cat",
+              "ball",
+              "goat"
+            ],
+            "answer": "ball",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q7",
+            "text": "Choose the third letter of alphabet",
+            "options": [
+              "A",
+              "D",
+              "C"
+            ],
+            "answer": "C",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q8",
+            "text": "What is the name of your school",
+            "options": [
+              "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
+              "Garko girls science"
+            ],
+            "answer": "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q9",
+            "text": "If B is for big then S is for",
+            "options": [
+              "Small",
+              "sell",
+              "son"
+            ],
+            "answer": "Small",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q10",
+            "text": "Is F is for father then, M is for",
+            "options": [
+              "Mother",
+              "mad",
+              "mañ"
+            ],
+            "answer": "Mother",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "TST2",
+      "name": "Test 2",
+      "classId": "NA",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "ENG-EXAM-Q1",
+            "text": "Choose two letter word",
+            "options": [
+              "Bat",
+              "fast",
+              "at"
+            ],
+            "answer": "at",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q2",
+            "text": ".... Is the name of person, place or things",
+            "options": [
+              "Verb",
+              "noun",
+              "adjective"
+            ],
+            "answer": "noun",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q3",
+            "text": "Choose small letter of A",
+            "options": [
+              "a",
+              "b",
+              "n"
+            ],
+            "answer": "a",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q4",
+            "text": "Examples of fruit is....",
+            "options": [
+              "Mango",
+              "fish",
+              "egg"
+            ],
+            "answer": "Mango",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q5",
+            "text": "A is for",
+            "options": [
+              "Apple",
+              "sun",
+              "pot"
+            ],
+            "answer": "Apple",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q6",
+            "text": "B is for …",
+            "options": [
+              "Cat",
+              "ball",
+              "goat"
+            ],
+            "answer": "ball",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q7",
+            "text": "Choose the third letter of alphabet",
+            "options": [
+              "A",
+              "D",
+              "C"
+            ],
+            "answer": "C",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q8",
+            "text": "What is the name of your school",
+            "options": [
+              "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
+              "Garko girls science"
+            ],
+            "answer": "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q9",
+            "text": "If B is for big then S is for",
+            "options": [
+              "Small",
+              "sell",
+              "son"
+            ],
+            "answer": "Small",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q10",
+            "text": "Is F is for father then, M is for",
+            "options": [
+              "Mother",
+              "mad",
+              "mañ"
+            ],
+            "answer": "Mother",
+            "marks": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "TST2",
+      "name": "Test 2",
+      "classId": "NB",
+      "questions": {
+        "test1": [],
+        "test2": [],
+        "test3": [],
+        "exam": [
+          {
+            "qid": "ENG-EXAM-Q1",
+            "text": "Choose two letter word",
+            "options": [
+              "Bat",
+              "fast",
+              "at"
+            ],
+            "answer": "at",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q2",
+            "text": ".... Is the name of person, place or things",
+            "options": [
+              "Verb",
+              "noun",
+              "adjective"
+            ],
+            "answer": "noun",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q3",
+            "text": "Choose small letter of A",
+            "options": [
+              "a",
+              "b",
+              "n"
+            ],
+            "answer": "a",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q4",
+            "text": "Examples of fruit is....",
+            "options": [
+              "Mango",
+              "fish",
+              "egg"
+            ],
+            "answer": "Mango",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q5",
+            "text": "A is for",
+            "options": [
+              "Apple",
+              "sun",
+              "pot"
+            ],
+            "answer": "Apple",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q6",
+            "text": "B is for …",
+            "options": [
+              "Cat",
+              "ball",
+              "goat"
+            ],
+            "answer": "ball",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q7",
+            "text": "Choose the third letter of alphabet",
+            "options": [
+              "A",
+              "D",
+              "C"
+            ],
+            "answer": "C",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q8",
+            "text": "What is the name of your school",
+            "options": [
+              "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
+              "Garko girls science"
+            ],
+            "answer": "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q9",
+            "text": "If B is for big then S is for",
+            "options": [
+              "Small",
+              "sell",
+              "son"
+            ],
+            "answer": "Small",
+            "marks": 2
+          },
+          {
+            "qid": "ENG-EXAM-Q10",
+            "text": "Is F is for father then, M is for",
+            "options": [
+              "Mother",
+              "mad",
+              "mañ"
+            ],
+            "answer": "Mother",
+            "marks": 2
+          }
+        ]
+      }
+    }
+  ],
+  "results": [
+    {
+      "id": "res_1768638390848",
+      "studentId": "2015",
+      "classId": "JSS 2",
+      "subject": "MTH",
+      "test1": 100,
+      "total": 100,
+      "updatedAt": "2026-01-17T08:26:30.848Z"
+    }
+  ],
+  "users": [],
+  "settings": {},
+  "pdfs": [
+    {
+      "id": "pdf_1768608408630",
+      "type": "exam_result",
+      "studentId": "2015",
+      "filePath": "/files/JSS 2/2015/exam_test1_2015_1768608408521.pdf",
+      "timestamp": "2026-01-17T00:06:48.630Z",
+      "subject": "Mathematics",
+      "examType": "test1"
+    },
+    {
+      "id": "pdf_1768608433195",
+      "type": "exam_result",
+      "studentId": "2015",
+      "filePath": "/files/JSS 2/2015/exam_test2_2015_1768608433138.pdf",
+      "timestamp": "2026-01-17T00:07:13.195Z",
+      "subject": "Mathematics",
+      "examType": "test2"
+    },
+    {
+      "id": "pdf_1768608451092",
+      "type": "exam_result",
+      "studentId": "2015",
+      "filePath": "/files/JSS 2/2015/exam_test3_2015_1768608451032.pdf",
+      "timestamp": "2026-01-17T00:07:31.092Z",
+      "subject": "Mathematics",
+      "examType": "test3"
+    },
+    {
+      "id": "pdf_1768608473795",
+      "type": "exam_result",
+      "studentId": "2015",
+      "filePath": "/files/JSS 2/2015/exam_exam_2015_1768608473722.pdf",
+      "timestamp": "2026-01-17T00:07:53.795Z",
+      "subject": "Mathematics",
+      "examType": "exam"
+    },
+    {
+      "id": "pdf_1768638391008",
+      "type": "exam_result",
+      "studentId": "2015",
+      "filePath": "/files/JSS 2/2015/exam_test1_2015_1768638390849.pdf",
+      "timestamp": "2026-01-17T08:26:31.008Z",
+      "subject": "Mathematics",
+      "examType": "test1"
+    }
+  ]
+}
