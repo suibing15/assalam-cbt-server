@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Admin - Assalam Academy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="/public/assets/css/style.css" />
+
+<style>
+body{
+  margin:0;
+  font-family:'Roboto',sans-serif;
+  background:linear-gradient(to bottom,#e9f2ff,#f5f8ff);
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+           env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+/* HEADER */
+.school-header {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:linear-gradient(135deg,#003366,#0055aa);
+  color:#fff;
+  padding:18px;
+  border-bottom:4px solid #002850;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 3px 10px rgba(0,0,0,0.25);
+}
+.school-header img.school-logo {
+  height:55px;
+  width:auto;
+  margin-right:15px;
+}
+.school-header h1 {
+  font-size:1.55rem;
+  margin:0;
+  font-weight:700;
+  letter-spacing:.5px;
+}
+
+/* PAGE TITLE */
+.page-title{
+  text-align:center;
+  margin:1.4rem 0;
+  font-size:1.6rem;
+  font-weight:700;
+  color:#003366;
+  text-shadow:0 1px 2px rgba(0,0,0,0.15);
+}
+
+/* CONTAINER */
+.container {
+  max-width:950px;
+  margin:1rem auto;
+  padding:1rem;
+}
+
+/* CARD */
+.card {
+  background:#fff;
+  border-radius:14px;
+  margin-bottom:16px;
+  box-shadow:0 3px 12px rgba(0,0,0,.12);
+  overflow:hidden;
+  transition:.3s;
+  border:1px solid #dce6f7;
+}
+.card:hover{
+  transform:scale(1.01);
+  box-shadow:0 5px 18px rgba(0,0,0,.18);
+}
+.card-header {
+  background:linear-gradient(90deg,#f0f4ff,#e8efff);
+  padding:14px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-weight:600;
+  cursor:pointer;
+  color:#003366;
+  border-bottom:1px solid #d4e0f4;
+}
+.toggle-icon { font-size:1.3rem; color:#004080; }
+.card-body {
+  display:none;
+  padding:14px;
+  border-top:1px solid #eee;
+  background:#fafcff;
+}
+.card-body.active { display:block; }
+
+/* BUTTON */
+button.primary {
+  width:100%;
+  background:linear-gradient(135deg,#0059b3,#003f88);
+  color:white;
+  border:none;
+  padding:.75rem;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+  font-size:1rem;
+  transition:.3s;
+}
+button.primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 4px 14px rgba(0,0,0,0.25);
+}
+
+/* INPUTS */
+input,select,textarea{
+  width:100%;
+  padding:.7rem;
+  border:1px solid #b9c7df;
+  border-radius:10px;
+  margin-bottom:.7rem;
+  font-size:.95rem;
+  background:#f9fbff;
+  transition:.2s;
+}
+input:focus,select:focus,textarea:focus{
+  outline:none;
+  border-color:#0066cc;
+  box-shadow:0 0 6px rgba(0,102,204,0.3);
+}
+input[type="file"] { padding:6px; }
+
+/* STUDENT ROW */
+.list-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#f7f9ff;
+  padding:.7rem;
+  border-radius:10px;
+  margin:.5rem 0;
+  border:1px solid #d8e2f5;
+  transition:.2s;
+}
+.list-item:hover{
+  background:#eef4ff;
+}
+
+/* IMAGE PREVIEW */
+.img-preview{
+  margin-top:5px;
+  max-width:160px;
+  border:1px solid #d0d8e8;
+  border-radius:8px;
+}
+
+/* MOBILE */
+@media(max-width:480px){
+  .school-header img{height:46px;}
+  .school-header h1{font-size:1.2rem;}
+  .page-title{font-size:1.3rem;}
+  button.primary,input,select{font-size:.9rem;}
+}
+.promote-btn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #0066cc, #004080);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.promote-btn:hover {
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  transform: translateY(-1px);
+}
+
+.promote-btn:active {
+  transform: scale(0.98);
+}
+
+.promote-hint {
+  font-size: 13px;
+  color: #555;
+  margin-top: 6px;
+}
+.analytics-panel {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.analytics-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.analytics-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background: #f9f9f9;
+}
+
+.analytics-select:focus {
+  outline: none;
+  border-color: #0d6efd;
+  background: #fff;
+}
+
+.analytics-btn {
+  padding: 9px 16px;
+  background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.analytics-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.analytics-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+#analyticsCanvas {
+  width: 100%;
+  height: 300px;
+  border-top: 1px solid #eee;
+  margin-top: 10px;
+}
+
+.analytics-summary {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #444;
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="school-header">
+  <img src="/public/images/logo.png" class="school-logo" alt="School Logo">
+  <h1>Assalam International Academic School Garko</h1>
+</header>
+
+<div class="container">
+
+  <div class="page-title">Admin Panel</div>
+
+  <!-- LOGIN -->
+  <div id="loginArea">
+    <form id="adminLogin">
+      <input name="username" placeholder="Admin username" required>
+      <input name="password" type="password" placeholder="Password" required>
+      <button class="primary" type="submit">Login</button>
+    </form>
+  </div>
+
+  <!-- MAIN ADMIN AREA -->
+  <div id="adminArea" style="display:none;">
+
+    <!-- ============================ -->
+    <!-- 📢 Broadcast Message Manager -->
+    <!-- ============================ -->
+    <div style="
+      margin: 20px 0;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    ">
+      <h2>Broadcast Message</h2>
+
+      <input id="broadcastText" 
+             type="text" 
+             placeholder="Type message to broadcast to all users..."
+             style="width:100%; padding:12px; font-size:16px; margin-bottom:10px;">
+
+      <button onclick="sendBroadcast()"
+              style="padding:12px 20px; font-size:16px; background:#005f8f; 
+                     color:white; border:none; border-radius:8px; cursor:pointer;">
+        Send Broadcast
+      </button>
+
+      <p id="broadcast-status" style="margin-top:10px; color:green;"></p>
+    </div>
+
+    <script>
+    async function sendBroadcast() {
+      const text = document.getElementById("broadcastText").value.trim();
+      const status = document.getElementById("broadcast-status");
+
+      if (!text) {
+        status.style.color = 'red';
+        status.textContent = "Message cannot be empty.";
+        return;
+      }
+
+      const res = await fetch("/api/admin/broadcast", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text })
+      });
+
+      const data = await res.json();
+
+      if(data.success){
+        status.style.color = 'green';
+        status.textContent = "Broadcast Sent Successfully!";
+      } else {
+        status.style.color = 'red';
+        status.textContent = "Failed to send broadcast.";
+      }
+
+      setTimeout(() => status.textContent = "", 3000);
+    }
+    </script>
+
+    <!-- ============================ -->
+    <!-- Other Cards (Toggles, Upload, Subjects, PDFs, Classes, Students) -->
+    <!-- Keep your existing cards exactly as before -->
+    <!-- Toggles -->
+    <div class="card">
+      <div class="card-header">
+        <span>Portal Toggles</span> <span class="toggle-icon">+</span>
+      </div>
+      <div class="card-body"><div id="toggles"></div></div>
+    </div>
+
+  <form id="uploadForm" enctype="multipart/form-data">
+  <input type="file" name="image" required>
+  <button class="primary" type="submit">Upload</button>
+</form>
+
+    <!-- Subjects & Questions -->
+    <div class="card">
+      <div class="card-header">
+        <span>Subjects & Questions</span> <span class="toggle-icon">+</span>
+      </div>
+      <div class="card-body">
+        <label>Select Class:</label>
+        <select id="classSelector"></select>
+        <hr>
+        <form id="addSubjectForm">
+          <input name="id" placeholder="Subject ID (e.g. ENG)" required>
+          <input name="name" placeholder="Subject Name" required>
+          <button class="primary" type="submit">Add Subject</button>
+        </form>
+        <div id="subjectsList"></div>
+      </div>
+    </div>
+
+    <!-- PDFs -->
+    <div class="card">
+      <div class="card-header">
+        <span>Files (PDFs)</span> <span class="toggle-icon">+</span>
+      </div>
+      <div class="card-body">
+        <div id="pdfList"></div>
+      </div>
+    </div>
+
+    <!-- Classes -->
+    <div class="card">
+      <div class="card-header">
+        <span>Manage Classes</span> <span class="toggle-icon">+</span>
+      </div>
+      <div class="card-body">
+        <form id="addClassForm">
+          <input name="id" placeholder="Class ID (e.g. P1)" required>
+          <input name="name" placeholder="Class Name" required>
+          <input name="password" placeholder="Password (optional)">
+          <button class="primary" type="submit">Add Class</button>
+        </form>
+        <div id="classList"></div>
+      </div>
+    </div>
+
+    <!-- Students -->
+    <div class="card">
+      <div class="card-header">
+        <span>Manage Students</span> <span class="toggle-icon">+</span>
+      </div>
+      <div class="card-body">
+        <form id="addStudentForm" enctype="multipart/form-data">
+          <input name="id" placeholder="Student ID" required>
+          <input name="name" placeholder="Student Name" required>
+          <input name="classId" placeholder="Class ID" required>
+          <input name="password" placeholder="Password (optional)">
+          <input type="file" name="photo" accept="image/*">
+          <button class="primary" type="submit">Add Student</button>
+        </form>
+
+        <div id="studentList"></div>
+
+        <hr>
+        <h4 style="margin-top:10px;color:#003366;">Bulk ID Card Generation</h4>
+
+        <label>Select Class for Bulk ID Cards</label>
+        <select id="bulkClassSelect"></select>
+
+        <button id="bulkIdGenerateBtn" type="button" class="primary" style="margin-top:8px;">
+          Generate ID Cards For Entire Class
+        </button>
+
+        <div id="bulkIdStatus" style="margin-top:10px;font-size:13px;padding:6px;border-radius:6px;background:#eef4ff;color:#003366;"></div>
+
+        <p style="font-size:12px;color:#555;margin-top:6px;">
+          🔔 This will automatically generate ID cards for all students in the selected class.
+        </p>
+      </div>
+    </div>
+ <button
+  class="primary promote-btn"
+  onclick="bulkPromoteStudents()"
+>
+  ⬆ Promote Students to Next Class
+</button>
+
+<p class="promote-hint">
+  This will move all students in the selected class to the next level.
+</p>
+<style>
+  body {
+    background: #f2f6fc;
+  }
+
+  .card {
+    max-width: 540px;
+    margin: 40px auto;
+    border-radius: 14px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    border: 1px solid #d9e6f7;
+    background: #ffffff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+  }
+
+  .card-header {
+    background: linear-gradient(135deg, #0066cc, #004080);
+    color: #ffffff;
+    padding: 18px 22px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+  }
+
+  .card-body {
+    padding: 24px;
+  }
+
+  .card-body label {
+    display: block;
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #004080;
+  }
+
+  .card-body select,
+  .card-body input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #c9d8ef;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #f8fbff;
+    transition: all 0.25s ease;
+  }
+
+  .card-body select:focus,
+  .card-body input:focus {
+    outline: none;
+    border-color: #0066cc;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
+  }
+
+  .hint {
+    font-size: 12px;
+    color: #5a6f8f;
+    margin-top: 4px;
+  }
+
+  #generateReceiptBtn {
+    width: 100%;
+    margin-top: 24px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0066cc, #004080);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+  }
+
+  #generateReceiptBtn:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+  }
+
+  #generateReceiptBtn:active {
+    transform: scale(0.98);
+  }
+
+  #receiptStatus {
+    margin-top: 18px;
+    font-size: 13px;
+    text-align: center;
+    color: #004080;
+    font-weight: 500;
+  }
+</style>
+
+<div class="card">
+  <div class="card-header">Bulk Receipt Generator</div>
+
+  <div class="card-body">
+
+    <!-- Select Class -->
+    <label>Select Class</label>
+    <select id="receiptClassSelect">
+      <option value="">-- Select Class --</option>
+    </select>
+    <div class="hint">
+      Choose the class for which bulk receipts will be generated.
+    </div>
+
+    <!-- Select Students -->
+    <label>Select Student(s)</label>
+    <select id="receiptStudentSelect" multiple size="6"></select>
+    <div class="hint">
+      Hold CTRL (Windows) or CMD (Mac) to select multiple students.
+    </div>
+
+    <!-- Select Term -->
+    <label>Select Term</label>
+    <select id="receiptTermSelect">
+      <option value="">-- Select Term --</option>
+      <option value="First Term">First Term</option>
+      <option value="Second Term">Second Term</option>
+      <option value="Third Term">Third Term</option>
+    </select>
+    <div class="hint">
+      Select the academic term associated with this payment.
+    </div>
+
+    <!-- Amount -->
+    <label>Amount Paid</label>
+    <input type="number" id="receiptAmount" placeholder="Enter Amount in ₦" />
+    <div class="hint">
+      Enter the amount paid per student in Nigerian Naira (₦).
+    </div>
+
+    <button id="generateReceiptBtn">Generate Receipt</button>
+
+    <div id="receiptStatus"></div>
+
+  </div>
+</div>
+<!-- ================= TEACHER MANAGEMENT ================= -->
+<div class="card">
+  <div class="card-header">
+    <span>👨‍🏫 Manage Teachers</span>
+    <span class="toggle-icon">+</span>
+  </div>
+
+  <div class="card-body">
+
+    <!-- ADD TEACHER -->
+    <form id="addTeacherForm">
+      <input name="id" placeholder="Teacher ID (e.g. T001)" required>
+      <input name="name" placeholder="Teacher Name" required>
+      <input name="password" placeholder="Password" required>
+      <button class="primary" type="submit">Add Teacher</button>
+    </form>
+
+    <hr>
+
+    <!-- TEACHER LIST -->
+    <div id="teacherList"></div>
+
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <span>📊 Attendance Reports</span>
+    <span class="toggle-icon">+</span>
+  </div>
+
+  <div class="card-body">
+    <label>Select Class</label>
+    <select id="attendanceClassSelect"></select>
+
+    <button class="primary" id="loadAttendanceBtn">
+      Load Attendance
+    </button>
+
+    <button
+      class="danger"
+      id="deleteAttendanceBtn"
+      style="margin-left:10px;"
+    >
+      🗑️ Delete Attendance
+    </button>
+
+    <pre id="attendanceViewer" style="
+      margin-top:10px;
+      max-height:300px;
+      overflow:auto;
+      background:#111;
+      color:#0f0;
+      padding:10px;
+      font-size:12px;
+    "></pre>
+  </div>
+</div>
+
+<button onclick="downloadClassAttendance('weekly')">
+  📅 Weekly Class Attendance
+</button>
+
+<button onclick="downloadClassAttendance('monthly')">
+  📆 Monthly Class Attendance
+</button>
+
+<button onclick="downloadTeacherAttendance('monthly')">
+  👨‍🏫 Teacher Attendance Summary
+</button>
+<div class="analytics-panel">
+  <div class="analytics-controls">
+    <select id="analyticsClass" class="analytics-select">
+      <option value="">Select Class</option>
+    </select>
+<select id="analyticsMode" class="analytics-select">
+  <option value="overview">Class Overview</option>
+</select>
+
+  <small style="color:#666;font-size:12px">
+  ℹ Shows overall class performance (ranking & pass/fail)
+</small>
+
+
+    <button id="loadAnalyticsBtn" class="analytics-btn">
+      📊 Load Analytics
+    </button>
+  </div>
+
+  <canvas id="analyticsCanvas"></canvas>
+  <div id="analyticsSummary" class="analytics-summary"></div>
+</div>
+
+
+
+<!-- ================= SOFTWARE MANAGEMENT ================= -->
+<div class="admin-section" id="softwareManagement" style="margin-top:30px;">
+  <h3 style="color:#8b0000;">🛠 Software Management</h3>
+
+  <div style="
+    background:#fff3f3;
+    border:1px solid #ffb3b3;
+    padding:15px;
+    border-radius:10px;
+  ">
+
+    <!-- STATUS -->
+    <p style="font-weight:600;">
+      System Status:
+      <span id="systemStatus" style="color:green;">ACTIVE</span>
+    </p>
+
+    <!-- DOWNLOAD REPORT -->
+    <button class="primary" id="downloadStudentStatsBtn">
+      📄 Download Student Statistics (PDF)
+    </button>
+
+   
+
+    <!-- FEATURE REQUEST -->
+    <h4>📩 Request Software Feature / Update</h4>
+
+    <textarea
+      id="featureRequestText"
+      rows="4"
+      style="width:100%;"
+      placeholder="Describe the feature or update you want..."
+    ></textarea>
+
+    <button class="primary" id="sendFeatureRequestBtn" style="margin-top:8px;">
+      📤 Send Request to Developer
+    </button>
+
+  </div>
+</div>
+<!-- ======================================================= -->
+<section class="admin-box">
+  <h3>🗄 Data Manager</h3>
+
+  <button id="viewDataBtn">View Stored Data</button>
+  <button id="resetDataBtn" style="background:#b00020;color:#fff;">
+    RESET ALL DATA
+  </button>
+ <p style="font-size:0.85rem;color:#a00;margin-top:8px;">
+      ⚠ This action is irreversible. Double confirmation required.
+    </p>
+  <pre id="dataViewer" style="
+    max-height: 400px;
+    overflow: auto;
+    background: #111;
+    color: #0f0;
+    padding: 12px;
+    display: none;
+    font-size: 12px;
+  "></pre>
+
+  </div>
+</div>
+<canvas id="analyticsCanvas"></canvas>
+
+<script src="/public/assets/js/login.js"></script>
+<script src="/manage/admin.js"></script>
+<script src="/manage/admin-ui.js"></script>
+
+<footer class="site-footer">
+© 2025 SUIBING IT SERVICES. All Rights Reserved.
+</footer>
+
+</body>
+</html>

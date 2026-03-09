@@ -1,0 +1,452 @@
+<!-- public/exam.html -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Exam Portal - Assalam Academy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+
+<link rel="stylesheet" href="/public/assets/css/style.css" />
+
+<style>
+/* ===== GLOBAL ===== */
+body {
+  margin:0;
+  font-family:'Poppins', sans-serif;
+  background:linear-gradient(135deg,#dfefff,#f5faff,#ffffff);
+  min-height:100vh;
+  color:#333;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+           env(safe-area-inset-bottom) env(safe-area-inset-left);
+  animation:fadeInBody 0.8s ease;
+}
+@keyframes fadeInBody {from{opacity:0;} to{opacity:1;}}
+
+/* ===== HEADER ===== */
+.school-header {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:#004080;
+  color:#fff;
+  padding:18px;
+  border-bottom:4px solid #00244d;
+  position:sticky;
+  top:0;
+  z-index:50;
+  box-shadow:0 4px 12px rgba(0,0,0,0.25);
+}
+.school-header img {
+  height:52px;
+  margin-right:12px;
+  filter:drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+.school-header h1 {
+  margin:0;
+  font-size:1.42rem;
+  font-weight:700;
+  letter-spacing:.4px;
+}
+.school-header p {
+  margin:0;
+  font-size:.9rem;
+  color:#d4e4ff;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+  max-width:920px;
+  margin:1.2rem auto;
+  padding:1.4rem;
+  background:#fff;
+  border-radius:18px;
+  box-shadow:0 10px 28px rgba(0,0,0,.12);
+  animation:fadeInUp .55s ease-in-out;
+}
+@keyframes fadeInUp {from{opacity:0;transform:translateY(25px);} to{opacity:1;transform:translateY(0);}}
+
+/* ===== TITLES ===== */
+h2 {
+  text-align:center;
+  margin-bottom:1.1rem;
+  color:#004f80;
+  font-weight:700;
+}
+
+/* ===== CARD ===== */
+.card {
+  background:#ffffff;
+  border-radius:14px;
+  margin-bottom:18px;
+  box-shadow:0 4px 14px rgba(0,0,0,.08);
+  overflow:hidden;
+  animation:fadeCard .45s ease;
+}
+@keyframes fadeCard {from{opacity:0;transform:translateY(10px);} to{opacity:1;transform:translateY(0);} }
+
+.card-header {
+  background:#f1f5fa;
+  padding:14px;
+  font-weight:650;
+  border-bottom:1px solid #dbe4ee;
+  color:#004080;
+  font-size:1.05rem;
+}
+.card-body {
+  padding:16px;
+}
+
+/* ===== BUTTONS ===== */
+button.primary {
+  width:100%;
+  padding:.78rem;
+  background:linear-gradient(135deg,#005fa0,#007dd6);
+  color:#fff;
+  border:none;
+  border-radius:10px;
+  font-size:1rem;
+  font-weight:600;
+  cursor:pointer;
+  touch-action:manipulation;
+  letter-spacing:.3px;
+  box-shadow:0 4px 12px rgba(0,0,0,.18);
+  transition:0.25s;
+}
+button.primary:hover {
+  transform:scale(1.015);
+  box-shadow:0 6px 16px rgba(0,0,0,0.22);
+}
+button.primary:active {transform:scale(.97); opacity:.9;}
+
+/* ===== INPUTS ===== */
+input {
+  width:100%;
+  padding:.75rem;
+  border:1px solid #c7d4e5;
+  border-radius:10px;
+  font-size:1rem;
+  margin-bottom:1rem;
+  background:#fafcff;
+  transition:.25s;
+}
+input:focus {
+  border-color:#0077cc;
+  outline:none;
+  box-shadow:0 0 8px rgba(0,119,204,.25);
+}
+
+/* ===== QUESTIONS ===== */
+#questionArea { margin-top:1rem; }
+
+.question-block {
+  padding:1rem;
+  background:#f8fbff;
+  border-radius:12px;
+  margin-bottom:1.2rem;
+  box-shadow:0 4px 12px rgba(0,0,0,.06);
+  border-left:4px solid #0077cc;
+  transition:0.3s;
+}
+.question-block:hover {
+  box-shadow:0 6px 18px rgba(0,0,0,.09);
+  transform:translateY(-1px);
+}
+
+.question-text {
+  font-weight:650;
+  margin-bottom:.7rem;
+  font-size:1.05rem;
+  color:#003f66;
+}
+
+.question-img {
+  width:100%;
+  max-width:300px;
+  margin:.7rem 0;
+  border-radius:8px;
+  border:1px solid #cdd7e5;
+  box-shadow:0 4px 10px rgba(0,0,0,.12);
+}
+
+/* ===== OPTIONS ===== */
+label.option {
+  display:block;
+  background:#fff;
+  padding:.7rem .75rem;
+  margin:.45rem 0;
+  border-radius:10px;
+  border:1px solid #cfd9e8;
+  cursor:pointer;
+  touch-action:manipulation;
+  font-size:.98rem;
+  transition:0.22s;
+}
+label.option:hover {
+  background:#eef6ff;
+  border-color:#0080d6;
+  transform:translateX(2px);
+}
+
+/* ===== TIMER BAR ===== */
+#timerBar {
+  width:100%;
+  height:15px;
+  border-radius:8px;
+  background:#e5e8eb;
+  margin:1.2rem 0;
+  overflow:hidden;
+  box-shadow:inset 0 2px 4px rgba(0,0,0,.12);
+}
+#timerFill {
+  height:100%;
+  width:100%;
+  background:linear-gradient(90deg,#00c853,#ffb300,#d50000);
+  transition:width 1s linear;
+  border-radius:8px;
+}
+
+/* ===== RESULT ===== */
+#resultArea {
+  display:none;
+  text-align:center;
+  background:#eef6ff;
+  padding:1.8rem;
+  border-radius:14px;
+  margin-top:1.2rem;
+  box-shadow:0 4px 18px rgba(0,0,0,.1);
+  animation:fadeIn .55s ease;
+}
+#score {
+  font-size:1.8rem;
+  font-weight:700;
+  color:#004080;
+  margin-bottom:.8rem;
+}
+
+@keyframes fadeIn {from{opacity:0;} to{opacity:1;}}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  margin:2rem 0;
+  text-align:center;
+  font-size:.9rem;
+  color:#555;
+  padding:10px;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:480px){
+  .school-header img { height:44px; }
+  .school-header h1 { font-size:1.15rem; }
+  .container { padding:1.05rem; }
+  input,button.primary { font-size:.95rem; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="school-header">
+  <img src="/public/logo.png" alt="School Logo">
+  <div>
+    <h1>ASSALAM INTERNATIONAL ACADEMIC SCHOOL GARKO</h1>
+    <p>Exam Portal</p>
+  </div>
+</header>
+
+<div class="container">
+
+  <h2>Student CBT Exam Portal</h2>
+
+  <!-- LOGIN -->
+  <div class="card" id="auth">
+    <div class="card-header">Portal Login</div>
+    <div class="card-body">
+      <form id="authForm">
+        <input name="portalPassword" placeholder="Portal password" required>
+        <button class="primary" type="submit">Enter</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- CLASS SELECT -->
+  <div class="card" id="classSelect" style="display:none;">
+    <div class="card-header">Choose Class</div>
+    <div class="card-body">
+      <div id="classList"></div>
+    </div>
+  </div>
+
+  <!-- STUDENT SELECT -->
+  <div class="card" id="studentSelect" style="display:none;">
+    <div class="card-header">Select Student</div>
+    <div class="card-body">
+      <div id="studentsList"></div>
+    </div>
+  </div>
+
+  <!-- EXAM AREA -->
+  <div class="card" id="examArea" style="display:none;">
+    <div class="card-header">Exam Area</div>
+    <div class="card-body">
+      <h3 id="examTitle"></h3>
+      <div id="testsButtons"></div>
+
+      <div id="timerBar"><div id="timerFill"></div></div>
+
+      <div id="questionArea"></div>
+    </div>
+  </div>
+
+  <!-- RESULT -->
+  <div id="resultArea">
+    <h3>Exam Completed!</h3>
+    <p id="score"></p>
+    <p>Thank you for your participation.</p>
+  </div>
+
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Create overlay if missing
+  let overlay = document.getElementById("broadcast-overlay");
+  if (!overlay) {
+    overlay = document.createElement("div");
+    overlay.id = "broadcast-overlay";
+
+    // Countdown span
+    const countdownSpan = document.createElement("div");
+    countdownSpan.id = "broadcast-countdown";
+    countdownSpan.style.fontSize = "0.5em";
+    countdownSpan.style.marginTop = "15px";
+    countdownSpan.style.opacity = "0.9";
+    countdownSpan.style.fontWeight = "600";
+    overlay.appendChild(countdownSpan);
+
+    document.body.appendChild(overlay);
+
+    // Styles
+    Object.assign(overlay.style, {
+      position: "fixed",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      width: "85%",
+      maxWidth: "700px",
+      minHeight: "120px",
+      backgroundColor: "rgba(0, 45, 105, 0.95)", // professional dark-blue
+      color: "#ffd700", // golden text
+      display: "none",
+      zIndex: "999999",
+      fontSize: "60px",
+      fontWeight: "900",
+      textAlign: "center",
+      justifyContent: "center",
+      alignItems: "center",
+      padding: "20px",
+      boxSizing: "border-box",
+      textShadow: "0 0 20px #000",
+      borderRadius: "18px",
+      border: "6px solid #ffcc00",
+      wordWrap: "break-word",
+      wordBreak: "break-word",
+      overflowWrap: "break-word",
+      display: "flex",
+      flexDirection: "column",
+      cursor: "not-allowed",
+      userSelect: "none",
+      pointerEvents: "all",
+      animation: "pulseOverlay 1s infinite alternate"
+    });
+
+    // Keyframes & responsive
+    const style = document.createElement("style");
+    style.innerHTML = `
+      @keyframes pulseOverlay {
+        0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+        50% { transform: translate(-50%, -50%) scale(1.05); opacity: 0.9; }
+        100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+      }
+
+      @media(max-width:1024px) { #broadcast-overlay { font-size: 50px; } }
+      @media(max-width:768px)  { #broadcast-overlay { font-size: 40px; } }
+      @media(max-width:480px)  { #broadcast-overlay { font-size: 28px; } }
+      @media(max-width:360px)  { #broadcast-overlay { font-size: 24px; } }
+    `;
+    document.head.appendChild(style);
+  }
+
+  // Prepare sound
+  const broadcastSound = new Audio("/public/sounds/alert.mp3");
+  broadcastSound.preload = "auto";
+
+  async function checkBroadcast() {
+    try {
+      const res = await fetch("/api/broadcast");
+      const data = await res.json();
+      const countdown = document.getElementById("broadcast-countdown");
+
+      if (data.text) {
+        overlay.innerHTML = `<div>${data.text}</div>`;
+        overlay.appendChild(countdown);
+        overlay.style.display = "flex";
+
+        // Dynamically adjust font size for long text
+        const maxCharsPerLine = Math.floor(window.innerWidth / 15);
+        if (data.text.length > maxCharsPerLine) {
+          overlay.style.fontSize = `${Math.max(18, Math.floor(60 * maxCharsPerLine / data.text.length))}px`;
+        } else {
+          overlay.style.fontSize = "60px";
+        }
+
+        document.body.style.pointerEvents = "none";
+        overlay.style.pointerEvents = "all";
+
+        // Play sound
+        broadcastSound.pause();
+        broadcastSound.currentTime = 0;
+        broadcastSound.play().catch(e => console.warn("Audio play blocked:", e));
+
+        // Countdown
+        let remaining = 30;
+        countdown.textContent = `Will disappear in ${remaining}s`;
+
+        const interval = setInterval(() => {
+          remaining--;
+          countdown.textContent = `Will disappear in ${remaining}s`;
+          if (remaining <= 0) {
+            clearInterval(interval);
+            overlay.style.display = "none";
+            document.body.style.pointerEvents = "auto";
+          }
+        }, 1000);
+
+      } else {
+        overlay.style.display = "none";
+        document.body.style.pointerEvents = "auto";
+      }
+
+    } catch (err) {
+      console.error("Broadcast fetch failed:", err);
+    }
+  }
+
+  checkBroadcast();
+  setInterval(checkBroadcast, 2000);
+
+});
+</script>
+
+<!-- JS -->
+<script src="/public/assets/js/login.js"></script>
+<script src="/public/assets/js/exam.js"></script>
+<script src="/public/assets/js/exam-init.js"></script>
+
+<footer class="site-footer">
+  © 2025 SUIBING IT SERVICES All Rights Reserved.
+</footer>
+
+</body>
+</html>
