@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Attendance</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont;
+    }
+
+    body {
+      margin: 0;
+      background: #f4f7fb;
+      color: #222;
+    }
+
+    header {
+      background: #0b5ed7;
+      color: #fff;
+      padding: 14px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 520px;
+      margin: auto;
+      padding: 14px;
+    }
+
+    h3 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 14px;
+      margin: 8px 0;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #0b5ed7;
+      color: #fff;
+      border: none;
+      font-weight: 600;
+    }
+
+    button.secondary {
+      background: #198754;
+    }
+
+    .student {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      padding: 12px;
+      margin-bottom: 6px;
+      border-radius: 8px;
+    }
+
+    .student span {
+      font-size: 15px;
+    }
+
+    .student input {
+      transform: scale(1.4);
+    }
+
+    .success {
+      display: none;
+      text-align: center;
+      color: #198754;
+      font-weight: 700;
+      margin-top: 16px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .logout {
+      background: #dc3545;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+<header>Class Attendance</header>
+
+<!-- TEACHER LOGIN -->
+<div class="container" id="teacherLogin">
+  <h3>Teacher Login</h3>
+
+  <input type="text" id="teacherId" placeholder="Teacher ID" />
+  <input type="password" id="teacherPassword" placeholder="Password" />
+
+  <button onclick="loginTeacher()">Login</button>
+
+  <p style="font-size:13px; opacity:.7; margin-top:8px;">
+    Enter your official teacher credentials to access attendance panel.
+  </p>
+</div>
+
+
+<!-- ATTENDANCE PANEL -->
+<div class="container hidden" id="attendancePanel" style="display:none;">
+
+  <h3>Mark Attendance</h3>
+
+  <!-- Step 1 -->
+  <label style="font-size:14px; font-weight:600;">Step 1: Select Class</label>
+  <select id="classSelect"></select>
+
+  <!-- Step 2 -->
+  <label style="font-size:14px; font-weight:600; margin-top:12px; display:block;">
+    Step 2: Enter Class Password
+  </label>
+  <input type="password" id="classPassword" placeholder="Class Password" />
+
+  <!-- Step 3 -->
+ <button onclick="loadStudents()">Verify Class</button>
+    
+
+  <p style="font-size:13px; opacity:.7; margin-top:6px;">
+    Students will only display after correct class password.
+  </p>
+
+  <hr style="margin:18px 0; opacity:.3;" />
+
+  <!-- Students -->
+  <div id="studentList"></div>
+
+  <!-- Submit -->
+  <button class="secondary" onclick="submitAttendance()">
+    Submit Attendance
+  </button>
+
+  <button class="logout" onclick="logoutTeacher()">
+    Logout
+  </button>
+
+  <div id="successMsg" class="success" style="display:none;">
+    Attendance Submitted Successfully
+  </div>
+
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Create overlay if missing
+  let overlay = document.getElementById("broadcast-overlay");
+  if (!overlay) {
+    overlay = document.createElement("div");
+    overlay.id = "broadcast-overlay";
+
+    // Countdown span
+    const countdownSpan = document.createElement("div");
+    countdownSpan.id = "broadcast-countdown";
+    countdownSpan.style.fontSize = "0.5em";
+    countdownSpan.style.marginTop = "15px";
+    countdownSpan.style.opacity = "0.9";
+    countdownSpan.style.fontWeight = "600";
+    overlay.appendChild(countdownSpan);
+
+    document.body.appendChild(overlay);
+
+    // Styles
+    Object.assign(overlay.style, {
+      position: "fixed",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      width: "85%",
+      maxWidth: "700px",
+      minHeight: "120px",
+      backgroundColor: "rgba(0, 45, 105, 0.95)", // professional dark-blue
+      color: "#ffd700", // golden text
+      display: "none",
+      zIndex: "999999",
+      fontSize: "60px",
+      fontWeight: "900",
+      textAlign: "center",
+      justifyContent: "center",
+      alignItems: "center",
+      padding: "20px",
+      boxSizing: "border-box",
+      textShadow: "0 0 20px #000",
+      borderRadius: "18px",
+      border: "6px solid #ffcc00",
+      wordWrap: "break-word",
+      wordBreak: "break-word",
+      overflowWrap: "break-word",
+      display: "flex",
+      flexDirection: "column",
+      cursor: "not-allowed",
+      userSelect: "none",
+      pointerEvents: "all",
+      animation: "pulseOverlay 1s infinite alternate"
+    });
+
+    // Keyframes & responsive
+    const style = document.createElement("style");
+    style.innerHTML = `
+      @keyframes pulseOverlay {
+        0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+        50% { transform: translate(-50%, -50%) scale(1.05); opacity: 0.9; }
+        100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+      }
+
+      @media(max-width:1024px) { #broadcast-overlay { font-size: 50px; } }
+      @media(max-width:768px)  { #broadcast-overlay { font-size: 40px; } }
+      @media(max-width:480px)  { #broadcast-overlay { font-size: 28px; } }
+      @media(max-width:360px)  { #broadcast-overlay { font-size: 24px; } }
+    `;
+    document.head.appendChild(style);
+  }
+
+  // Prepare sound
+  const broadcastSound = new Audio("/public/sounds/alert.mp3");
+  broadcastSound.preload = "auto";
+
+  async function checkBroadcast() {
+    try {
+      const res = await fetch("/api/broadcast");
+      const data = await res.json();
+      const countdown = document.getElementById("broadcast-countdown");
+
+      if (data.text) {
+        overlay.innerHTML = `<div>${data.text}</div>`;
+        overlay.appendChild(countdown);
+        overlay.style.display = "flex";
+
+        // Dynamically adjust font size for long text
+        const maxCharsPerLine = Math.floor(window.innerWidth / 15);
+        if (data.text.length > maxCharsPerLine) {
+          overlay.style.fontSize = `${Math.max(18, Math.floor(60 * maxCharsPerLine / data.text.length))}px`;
+        } else {
+          overlay.style.fontSize = "60px";
+        }
+
+        document.body.style.pointerEvents = "none";
+        overlay.style.pointerEvents = "all";
+
+        // Play sound
+        broadcastSound.pause();
+        broadcastSound.currentTime = 0;
+        broadcastSound.play().catch(e => console.warn("Audio play blocked:", e));
+
+        // Countdown
+        let remaining = 30;
+        countdown.textContent = `Will disappear in ${remaining}s`;
+
+        const interval = setInterval(() => {
+          remaining--;
+          countdown.textContent = `Will disappear in ${remaining}s`;
+          if (remaining <= 0) {
+            clearInterval(interval);
+            overlay.style.display = "none";
+            document.body.style.pointerEvents = "auto";
+          }
+        }, 1000);
+
+      } else {
+        overlay.style.display = "none";
+        document.body.style.pointerEvents = "auto";
+      }
+
+    } catch (err) {
+      console.error("Broadcast fetch failed:", err);
+    }
+  }
+
+  checkBroadcast();
+  setInterval(checkBroadcast, 2000);
+
+});
+</script>
+<script src="attendance.js"></script>
+</body>
+</html>
