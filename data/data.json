@@ -13,7 +13,7 @@
     "portalPasswords": {
       "teacherPortal": "cc",
       "examPortal": "aa",
-      "parentPortal": "suibing18"
+      "parentPortal": "PRNT"
     },
     "testToggles": {
       "test1": false,
