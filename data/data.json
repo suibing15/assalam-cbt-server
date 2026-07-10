@@ -1,7 +1,7 @@
 {
   "meta": {
     "schoolName": "ASSALAM INTERNATIONAL ACADEMIC SCHOOL GARKO",
-    "term": "SECOND TERM",
+    "term": "THIRD TERM",
     "session": "2025/2026",
     "logo": "/uploads/question_1771871127055.jpg",
     "signaturePrincipal": "/uploads/principal_signature.png",
@@ -13,7 +13,7 @@
     "portalPasswords": {
       "teacherPortal": "cc",
       "examPortal": "aa",
-      "parentPortal": "suibing18"
+      "parentPortal": "dd"
     },
     "testToggles": {
       "test1": false,
