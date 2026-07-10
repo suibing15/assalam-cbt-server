@@ -574,7 +574,7 @@ app.post("/offline-sync", (req, res) => {
             return res.status(400).json({ error: "Invalid payload" });
         }
 
-        const dataPath = path.join(__dirname, "data.json");
+        const dataPath = path.join(__dirname, "data", "data.json");
         const data = JSON.parse(fs.readFileSync(dataPath, "utf8"));
 
         // Ensure bucket exists
