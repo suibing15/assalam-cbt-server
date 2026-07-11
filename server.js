@@ -2779,7 +2779,7 @@ app.get(
     const meta = {
       schoolName: "ASSALAM INTERNATIONAL ACADEMIC SCHOOL",
       className: classId,
-      term: "Second Term",
+      term: "Third Term",
       session: "2025/2026",
       totalStudents: students.length
     };
