@@ -168,7 +168,7 @@ function generateClassReportPDF(meta, students, results, subjects, outPath, call
       doc.font("Helvetica").text(getRecommendation(avg), 60, rowY + 14, { width: 380 });
     // Next Term
     doc.font("Helvetica-Bold").fontSize(10).text("Next Term Begins:",400,y);
-    doc.font("Helvetica").fontSize(10).text("19/01/2026",400,y+14);
+    doc.font("Helvetica").fontSize(10).text("08/09/2026",400,y+14);
       let sigY = rowY + 90;
       doc.font("Helvetica-Bold");
       doc.text("Teacher's Signature:", 60, sigY);
